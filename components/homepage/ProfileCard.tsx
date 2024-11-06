@@ -65,6 +65,7 @@ const ProfileCard = () => {
           alt="avatar"
           width={550}
           height={350}
+          priority 
           style={{
             objectPosition: '50% 0%',
             objectFit: 'cover',

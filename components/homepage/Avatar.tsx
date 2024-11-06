@@ -61,6 +61,7 @@ const Avatar = () => {
           alt="avatar"
           width={430}
           height={350}
+          priority 
         />
       </div>
     </div>

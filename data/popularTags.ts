@@ -9,6 +9,18 @@ type PopularTag = {
 
 const popularTags: PopularTag[] = [
   {
+    href: '/tags/product',
+    iconType: 'Product',
+    slug: 'product',
+    title: 'product',
+  },
+  {
+    href: '/tags/dotnet',
+    iconType: 'Dotnet',
+    slug: 'dotnet',
+    title: 'dotnet',
+  },
+  {
     href: '/tags/javascript',
     iconType: 'Javascript',
     slug: 'javascript',
@@ -26,12 +38,7 @@ const popularTags: PopularTag[] = [
     slug: 'nestjs',
     title: 'NestJS',
   },
-  {
-    href: '/tags/react',
-    iconType: 'React',
-    slug: 'react',
-    title: 'React',
-  },
+
   {
     href: '/tags/database',
     iconType: 'Mongodb',

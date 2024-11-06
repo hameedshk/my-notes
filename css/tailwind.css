@@ -79,6 +79,12 @@ html.lightbox-loading * {
 /* END: CSS Github discussion */
 
 /* START: CSS popular tags */
+
+
+.popular-tags .product {
+  @apply bg-blue-400 ;
+}
+
 .popular-tags .javascript {
   @apply bg-amber-400;
 }
@@ -91,7 +97,7 @@ html.lightbox-loading * {
   @apply bg-rose-500;
 }
 
-.popular-tags .react {
+.popular-tags .dotnet {
   @apply bg-sky-500;
 }
 
