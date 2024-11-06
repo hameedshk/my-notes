@@ -38,7 +38,7 @@ const TypedBios = () => {
           I'm focusing on learning <b className="font-medium">Product Management</b>.
         </li>
         <li>
-          I work mostly with <b className="font-medium">Javascript/Typescript</b> technologies.
+          I work mostly on <b className="font-medium">Product Management and Dotnet</b> technologies.
         </li>
         </ul>
       <span ref={el} className="text-neutral-900 dark:text-neutral-200" />
