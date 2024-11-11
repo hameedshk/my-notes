@@ -26,11 +26,11 @@ const TypedBios = () => {
         </li>
         <li>
           I live in <b className="font-medium">Bangalore, India</b>.
-        </li>       
+        </li>
         <li>
           My first programming language I learned was <b className="font-medium">C#</b>.
         </li>
-        <li>I love Product Management & web development.          
+        <li>I love Product Management & web development.
         </li>
         <li>
           I'm focusing on learning <b className="font-medium">Product Management</b>.
@@ -38,7 +38,7 @@ const TypedBios = () => {
         <li>
           I work mostly on <b className="font-medium">Product Management and Dotnet</b> technologies.
         </li>
-        </ul>
+      </ul>
       <span ref={el} className="text-neutral-900 dark:text-neutral-200" />
     </div>
   );
