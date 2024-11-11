@@ -26,14 +26,12 @@ const TypedBios = () => {
         </li>
         <li>
           I live in <b className="font-medium">Bangalore, India</b>.
-        </li>
-        {/* <li>
-          I was born in the beautiful <b className="font-medium">bangalore</b> city.
-        </li> */}
+        </li>       
         <li>
           My first programming language I learned was <b className="font-medium">C#</b>.
         </li>
-        <li>I love Product Management & web development.</li>
+        <li>I love Product Management & web development.          
+        </li>
         <li>
           I'm focusing on learning <b className="font-medium">Product Management</b>.
         </li>
