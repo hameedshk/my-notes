@@ -12,13 +12,13 @@ const popularTags: PopularTag[] = [
     href: '/tags/product',
     iconType: 'Product',
     slug: 'product',
-    title: 'product',
+    title: 'Product',
   },
   {
     href: '/tags/dotnet',
     iconType: 'Dotnet',
     slug: 'dotnet',
-    title: 'dotnet',
+    title: 'Dotnet',
   },
   {
     href: '/tags/javascript',
@@ -27,17 +27,17 @@ const popularTags: PopularTag[] = [
     title: 'Javascript',
   },
   {
-    href: '/tags/typescript',
-    iconType: 'Typescript',
-    slug: 'typescript',
-    title: 'Typescript',
+    href: '/tags/angular',
+    iconType: 'Angular',
+    slug: 'angular',
+    title: 'Angular',
   },
-  {
-    href: '/tags/nestjs',
-    iconType: 'NestJS',
-    slug: 'nestjs',
-    title: 'NestJS',
-  },
+  // {
+  //   href: '/tags/nestjs',
+  //   iconType: 'NestJS',
+  //   slug: 'nestjs',
+  //   title: 'NestJS',
+  // },
 
   {
     href: '/tags/database',

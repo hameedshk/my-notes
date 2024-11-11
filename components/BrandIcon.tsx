@@ -21,6 +21,7 @@ import Postgres from 'public/static/icons/postgres.svg';
 import Mongodb from 'public/static/icons/mongodb.svg';
 import Product from 'public/static/icons/product.svg';
 import Dotnet from 'public/static/icons/dotnet.svg';
+import Angular from 'public/static/icons/angular.svg';
 
 export const BrandIconsMap = {
   React,
@@ -45,7 +46,8 @@ export const BrandIconsMap = {
   Postgres,
   Mongodb,
   Product,
-  Dotnet
+  Dotnet,
+  Angular
 };
 
 export type BrandIconType = keyof typeof BrandIconsMap;

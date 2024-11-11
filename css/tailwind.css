@@ -82,20 +82,20 @@ html.lightbox-loading * {
 
 
 .popular-tags .product {
-  @apply bg-blue-400 ;
+  @apply bg-rose-500;
 }
 
 .popular-tags .javascript {
   @apply bg-amber-400;
 }
 
-.popular-tags .typescript {
+.popular-tags .angular {
   @apply bg-blue-500;
 }
 
-.popular-tags .nestjs {
+/* .popular-tags .nestjs {
   @apply bg-rose-500;
-}
+} */
 
 .popular-tags .dotnet {
   @apply bg-sky-500;
