@@ -22,7 +22,7 @@ const projectsData: Project[] = [
     type: 'self',
     title: 'Personal website',
     imgSrc: '/static/images/projects/hameed-blog.png',
-    repo: 'hameedshk.dev',
+    repo: 'hameedshk.github.io/my-notes/',
     builtWith: ['Next.js', 'Tailwind', 'Typescript', 'Prisma', 'Umami'],
   },
   {
