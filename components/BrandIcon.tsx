@@ -47,7 +47,7 @@ export const BrandIconsMap = {
   Mongodb,
   Product,
   Dotnet,
-  Angular
+  Angular,
 };
 
 export type BrandIconType = keyof typeof BrandIconsMap;
