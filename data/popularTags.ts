@@ -9,29 +9,36 @@ type PopularTag = {
 
 const popularTags: PopularTag[] = [
   {
+    href: '/tags/product',
+    iconType: 'Product',
+    slug: 'product',
+    title: 'Product',
+  },
+  {
+    href: '/tags/dotnet',
+    iconType: 'Dotnet',
+    slug: 'dotnet',
+    title: 'Dotnet',
+  },
+  {
     href: '/tags/javascript',
     iconType: 'Javascript',
     slug: 'javascript',
     title: 'Javascript',
   },
   {
-    href: '/tags/typescript',
-    iconType: 'Typescript',
-    slug: 'typescript',
-    title: 'Typescript',
+    href: '/tags/angular',
+    iconType: 'Angular',
+    slug: 'angular',
+    title: 'Angular',
   },
-  {
-    href: '/tags/nestjs',
-    iconType: 'NestJS',
-    slug: 'nestjs',
-    title: 'NestJS',
-  },
-  {
-    href: '/tags/react',
-    iconType: 'React',
-    slug: 'react',
-    title: 'React',
-  },
+  // {
+  //   href: '/tags/nestjs',
+  //   iconType: 'NestJS',
+  //   slug: 'nestjs',
+  //   title: 'NestJS',
+  // },
+
   {
     href: '/tags/database',
     iconType: 'Mongodb',

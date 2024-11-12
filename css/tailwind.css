@@ -79,19 +79,25 @@ html.lightbox-loading * {
 /* END: CSS Github discussion */
 
 /* START: CSS popular tags */
+
+
+.popular-tags .product {
+  @apply bg-rose-500;
+}
+
 .popular-tags .javascript {
   @apply bg-amber-400;
 }
 
-.popular-tags .typescript {
+.popular-tags .angular {
   @apply bg-blue-500;
 }
 
-.popular-tags .nestjs {
+/* .popular-tags .nestjs {
   @apply bg-rose-500;
-}
+} */
 
-.popular-tags .react {
+.popular-tags .dotnet {
   @apply bg-sky-500;
 }
 

@@ -7,6 +7,7 @@ import type { SpotifyNowPlayingData } from '@/types/index';
 import MusicBar from '@/components/homepage/MusicBar';
 
 const SpotifyNowPlaying = () => {
+  /*
   const response = useSWR('/api/spotify', fetcher);
 
   const { songUrl, title, artist } = (response.data as SpotifyNowPlayingData) || {};
@@ -36,7 +37,7 @@ const SpotifyNowPlaying = () => {
         <p className="max-w-max truncate dark:text-gray-300">{artist || 'Spotify'}</p>
       </div>
     </div>
-  );
+  );*/
 };
 
 export default SpotifyNowPlaying;

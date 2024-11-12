@@ -72,7 +72,7 @@ const ProfileCard = () => {
             aspectRatio: '20/16',
           }}
         />
-        <SpotifyNowPlaying />
+        {/* <SpotifyNowPlaying /> */}
         <ProfileInfo />
         <div className="h-1.5 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600"></div>
       </div>
