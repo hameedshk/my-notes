@@ -37,9 +37,9 @@ const siteMetadata = {
   comments: {
     provider: 'giscus',
     giscusConfig: {
-      repo: process.env.NEXT_PUBLIC_GISCUS_REPO,
-      repositoryId: process.env.NEXT_PUBLIC_GISCUS_REPOSITORY_ID,
-      category: process.env.NEXT_PUBLIC_GISCUS_CATEGORY,
+      repo: "hameedshk/my-notes",
+      repositoryId: "R_kgDONK4GnA",
+      category: "General",
       categoryId: process.env.NEXT_PUBLIC_GISCUS_CATEGORY_ID,
       mapping: 'pathname',
       reactions: '1',
