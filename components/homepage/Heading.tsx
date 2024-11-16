@@ -4,7 +4,7 @@ import { Twemoji } from '@/components/Twemoji';
 
 const Heading = () => {
   return (
-    <h1 >
+    <h1>
       Hi,there!I'm <span>{siteMetadata.name}</span> 👋
       {/* <span className="hidden">Bangalore, IN</span> */}
       <span className="absolute ml-1.5 inline-flex pt-[3px]">
