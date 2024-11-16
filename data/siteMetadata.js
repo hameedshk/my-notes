@@ -4,6 +4,7 @@
 const siteMetadata = {
   title: "Hameed's Personal notes",
   author: 'Hameed Syed',
+  name:"Hameed",
   fullName: 'Syed Hameed K',
   headerTitle: "shk's Blog",
   description: 'My desire to practice my skills and share my acquired knowledge fuels my endeavors.',

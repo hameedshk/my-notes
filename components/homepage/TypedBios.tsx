@@ -30,7 +30,8 @@ const TypedBios = () => {
         <li>
           My first programming language I learned was <b className="font-medium">C#</b>.
         </li>
-        <li>I love Product Management & web development.</li>
+        <li>I love Product Management & web development.
+        </li>
         <li>
           I'm focusing on learning <b className="font-medium">Product Management</b>.
         </li>
