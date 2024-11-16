@@ -12,7 +12,7 @@ const siteMetadata = {
   theme: 'system',
   siteUrl: 'https://hameedshk.github.io/my-notes/',
   analyticsURL:
-    "https://analytics.us.umami.is/share/LwbQOMMcBOK9zcwU/hameed's%20Blog%20-%hameed's%20Coding%20Adventure",
+    "https://us.umami.is/websites/42b243ca-d23e-427a-b295-2b68e0479257",
   siteRepo: 'https://github.com/hameedshk',
   siteLogo: '/static/images/avatar.jpg',
   image: '/static/images/avatar.jpg',
@@ -30,7 +30,7 @@ const siteMetadata = {
     facebook: 'Hameed.dev',
   },
   analytics: {
-    umamiWebsiteId: '42b243ca-d23e-427a-b295-2b68e047925',
+    umamiWebsiteId: 'a45fa395-1f7e-40e8-bc5c-394e2957d75c',
   },
   newsletter: {
     provider: 'buttondown',
