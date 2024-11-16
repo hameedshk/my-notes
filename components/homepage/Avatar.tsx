@@ -54,7 +54,7 @@ const Avatar = () => {
       style={{ perspective: '800px' }}
       ref={ref}
     >
-      <div style={style} className="max-h-[430px] overflow-hidden rounded-md transition-all duration-200 ease-out">
+      {/* <div style={style} className="max-h-[430px] overflow-hidden rounded-md transition-all duration-200 ease-out">
         <Image
           src={'/my-notes/static/images/avatar.jpg'}
           shouldOpenLightbox={false}
@@ -62,7 +62,7 @@ const Avatar = () => {
           width={430}
           height={350}
         />
-      </div>
+      </div> */}
     </div>
   );
 };

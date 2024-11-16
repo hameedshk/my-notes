@@ -4,6 +4,7 @@
 const siteMetadata = {
   title: "Hameed's Personal notes",
   author: 'Hameed Syed',
+  name:"Hameed",
   fullName: 'Syed Hameed K',
   headerTitle: "shk's Blog",
   description: 'My desire to practice my skills and share my acquired knowledge fuels my endeavors.',
@@ -29,7 +30,7 @@ const siteMetadata = {
     facebook: 'Hameed.dev',
   },
   analytics: {
-    umamiWebsiteId: '7b7953a7-de2e-4e30-9a29-1a4aee05c627',
+    umamiWebsiteId: '42b243ca-d23e-427a-b295-2b68e047925',
   },
   newsletter: {
     provider: 'buttondown',
