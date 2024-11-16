@@ -20,7 +20,7 @@ const securityHeaders = [
   // https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP
   {
     key: 'Content-Security-Policy',
-    value: "frame-src 'self' http://localhost:3000/my-notes/"
+    value: "frame-src 'self' giscus.app giscus.app us.umami.is http://localhost:3000/my-notes/"
   },
   // https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy
   {
