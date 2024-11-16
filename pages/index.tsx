@@ -38,7 +38,7 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
 
   return (
     <div className="relative">
-      <Snowfall
+      {/* <Snowfall
         snowflakeCount={60}
         style={{
           zIndex: -1,
@@ -46,12 +46,12 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
           width: '100vw',
           height: '100vh',
         }}
-      />
+      /> */}
 
       <PageSEO title={`${headerTitle} - ${title}`} description={description} />
 
       {/* Introduce myself */}
-      {/* <div className="mt-8 dark:divide-gray-700 md:mt-8"> */}
+      <div className="mt-8 dark:divide-gray-700 md:mt-8">
         {/* <Greeting /> */}
         <div className="flex flex-col justify-between md:my-4 md:pb-8 xl:flex-row">
           {/* <Avatar /> */}
@@ -68,7 +68,7 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
               <span className="mr-2">Happy reading</span>
               <Twemoji emoji="clinking-beer-mugs" />
             </p> */}
-          {/* </div> */}
+          </div>
         </div>
       </div>
 
