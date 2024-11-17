@@ -7,8 +7,8 @@ class MyDocument extends Document {
       <Html lang={siteMetadata.language} className="scroll-smooth">
         <Head>
           <link rel="apple-touch-icon" sizes="76x76" href="/my-notes/static/favicons/apple-touch-icon.png" />
-          <link rel="icon" type="image/png" sizes="32x32" href="/my-notes/static/favicons/tennis-racquet.png" />
-          <link rel="icon" type="image/png" sizes="16x16" href="/my-notes/static/favicons/tennis-racquet.png" />
+          <link rel="icon" type="image/png" sizes="32x32" href="/my-notes/static/favicons/shk.png" />
+          <link rel="icon" type="image/png" sizes="16x16" href="/my-notes/static/favicons/shk.png" />
           <link rel="manifest" href="/my-notes/static/favicons/site.webmanifest" />
           <link rel="mask-icon" href="/my-notes/static/favicons/safari-pinned-tab.svg" color="#5bbad5" />
           <meta name="msapplication-TileColor" content="#000000" />
