@@ -58,7 +58,7 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
         {/* <div className="max-h-[430px] overflow-hidden rounded-md">
             <Image src={'/static/images/avatar.jpg'} alt="avatar" width={430} height={350} />
           </div> */}
-        <div className="my-auto flex flex-col text-lg leading-8 text-gray-600 dark:text-gray-400">
+        <div className="text-md my-auto flex flex-col leading-6">
           <Heading />
           {/* <TypedBios /> */}
           <ShortDescription />

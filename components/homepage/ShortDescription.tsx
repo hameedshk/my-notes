@@ -16,12 +16,15 @@ const ShortDescription = () => {
       </p>
       <p>
         With strong system design expertise, I explore how robust architecture and user-driven development can transform
-        digital experiences.You can view my experience here <a
+        digital experiences.You can view my experience here{' '}
+        <a
           target="_blank"
           href="https://hameedshk.github.io/my-notes/resume"
-          className="text-[rgb(100,80,150)]"
+          className="text-[rgb(255,27,27)]"
           rel="noreferrer"
-        >resume.</a>
+        >
+          resume.
+        </a>
       </p>
       <p>
         Join me as I share insights, best practices, and lessons learned from building innovative software solutions
