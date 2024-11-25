@@ -15,7 +15,7 @@ const siteMetadata = {
   siteRepo: 'https://github.com/hameedshk',
   siteLogo: '/static/images/avatar.jpg',
   image: '/static/images/avatar.jpg',
-  ogImageURL:'/static/images/website-image.jpeg',
+  ogImageURL: '/static/images/website-image.jpeg',
   socialBanner: '/static/images/projects/hameed-blog.png',
   email: 'kshameed7@gmail.com',
   github: 'https://github.com/hameedshk',
