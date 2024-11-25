@@ -194,140 +194,86 @@ quantitative way to prioritize features based on these four criteria.
   
   Example: If a feature will be used by 1,000 users per month, the Reach score is 1,000.
 
-  Consideration: Reach helps determine the scope of the feature's impact.
+  **Consideration**: Reach helps determine the scope of the feature's impact.
 
 - **Impact**: Estimate how much the feature will contribute to a specific goal, usually on a scale (e.g., 3 = high, 2  = medium, 1 = low). How much the feature will affect an individual user or customer, typically measured on a scale  (e.g., 1 to 5, where 5 is a massive impact and 1 is minimal impact). 
 
   Example: A feature that significantly improves the user experience might have an Impact score of 4.
 
-  Consideration: Impact assesses the magnitude of the benefit for each user.
+  **Consideration**: Impact assesses the magnitude of the benefit for each user.
 
 - **Confidence**: Rate your confidence in the accuracy of your Reach and Impact estimates, usually on a percentage
   scale. How confident the team is in the estimates of Reach and Impact. This is also scored on a percentage scale
-  (e.g., 100% for very confident, 80% for somewhat confident). Example: If the team has limited data, they might
-  assign a Confidence score of 70%.
+  (e.g., 100% for very confident, 80% for somewhat confident).
+  
+  Example: If the team has limited data, they might assign a Confidence score of 70%.
 
-  Consideration: Confidence adjusts the score to account for uncertainty, ensuring that projects with shaky assumptions are
+  **Consideration**: Confidence `adjusts` the score to account for uncertainty, ensuring that projects with shaky assumptions are
   deprioritized.
 
 - **Effort**: Estimate the amount of time and resources needed to implement the feature. This is often measured in
   person-months or weeks.How much time or resources are required to complete the feature, typically measured in
-  person-months.Example: If a feature takes 2 months of developer time, the Effort score is 2.
+  person-months.
+  
+  Example: If a feature takes 2 months of developer time, the Effort score is 2.
 
-  Consideration: Lower Effort scores contribute to higher prioritization.
+  **Consideration**: Lower Effort scores contribute to higher prioritization.
 
 ```javascript
 //Higher RICE scores indicate higher priority
 RICE Score =(Reach * Impact * Confidence) / Effort.
 ```
+_Example of RICE Scoring:_
 
-Example of RICE Scoring:Imagine a team evaluating three different features:
+Imagine a team evaluating three different features:
 
-1. Feature A: Improved Onboarding Flow Reach: 2,000 users/month Impact: 3 (medium) Confidence: 90% Effort: 2 months RICE
-   Score: 2000×3×0.92/2= 2,700
+- **Feature A**: Improved Onboarding Flow
+  - Reach: 2,000 users/month 
+  - Impact: 3 (medium) 
+  - Confidence: 90%
+  - Effort : 2 months
+  - RICE Score: 2000×3×0.9=5400/2= 2,700
 
-2. Feature B: New Reporting Dashboard
-   Reach: 500 users/month
-   Impact: 5 (high)
-   Confidence: 80%
-   Effort: 3 months
-   RICE Score: 500×5×0.83=667/3=667
+- **Feature B**: New Reporting Dashboard
+  - Reach: 500 users/month
+  - Impact: 5 (high)
+  - Confidence: 80%
+  - Effort: 3 months
+  - RICE Score: 500×5×0.8=667/3=667
 
-3. Feature C: Social Media Integration
-   Reach: 3,000 users/month
-   Impact: 2 (low)
-   Confidence: 100%
-   Effort: 1.5 months
-   RICE Score: 3000×2×1.01.5=4,000\1.5=4,000
-   Prioritization Outcome:
+- **Feature C**: Social Media Integration
+  - Reach: 3,000 users/month
+  - Impact: 2 (low)
+  - Confidence: 100%
+  - Effort: 1.5 months
+  - RICE Score: 3000×2×1=6,000/1.5=4,000
 
-**Conclusion** : Feature C has the highest RICE score (4,000), suggesting it should be prioritized first.
-Feature A comes next with a score of 2,700, followed by Feature B with a score of 667.
-Complexity: The scoring process can be time-consuming, especially if the data is hard to gather. Overemphasis on Quantifiable Factors: Qualitative factors like strategic alignment or brand perception might be underrepresented.
+**Prioritization Outcome** : 
 
-<em>Pros</em>: Provides a clear,Complexity: The scoring process can be time-consuming, especially if the data is hard to
-gather. Overemphasis on Quantifiable Factors: Qualitative factors like strategic alignment or brand perception might be
+**Feature C** has the highest RICE score (4,000), suggesting it should be prioritized first.
+
+**Feature A** comes next with a score of 2,700, followed by **Feature B** with a score of 667.
+
+![RICE prioritization example](/my-notes/static/images/blogs/rice-prioritization.png "RICE Model example")
+
+**Pros**
+
+- Provides a clear, data-driven decision; balances  value and effort,accounts for uncertainty .
+
+**Cons** 
+
+- Requires accurate data and estimation; can be time-consuming 
+- **Subjectivity in Scoring**: Estimates for
+Reach, Impact, and Effort can still be subjective and may vary between team members.
+- **Complexity**: The scoring process can be time-consuming, especially if the data is hard to
+gather.
+- **Overemphasis on Quantifiable Factors**: Qualitative factors like strategic alignment or brand perception might be
 underrepresented. data-driven decision; balances value and effort,accounts for uncertainty
-
-<em>Cons</em>: Requires accurate data and estimation; can be time-consuming Subjectivity in Scoring: Estimates for
-Reach, Impact, and Effort can still be subjective and may vary between team members. Complexity: The scoring process can
-be time-consuming, especially if the data is hard to gather. Overemphasis on Quantifiable Factors: Qualitative factors
-like strategic alignment or brand perception might be underrepresented.
 
 RICE scoring provides a structured approach to feature prioritization, ensuring that the team focuses on the most
 valuable and feasible projects.
 
-#### 3.<ins>MoSCoW Method</ins>
-
-This method is particularly useful in managing scope and ensuring that the most critical elements of a project are completed first.
-**Breakdown of the MoSCoW Framework:**
-
-1.  **Must Have**: These are non-negotiable requirements that are critical to the success of the project. Without these, the project would fail or be deemed unsuccessful.
-
-    **Examples**: Core features that the product cannot function without, regulatory or legal requirements, essential functionality that must be delivered within a fixed timeframe.
-
-    **Considerations**: If any "Must have" item is not delivered, the project could be delayed or even canceled. It’s
-    important to keep these to a minimum to ensure feasibility.
-
-2.  **Should Have**: These are important but not vital requirements. They add significant value and are expected to be included
-    if possible, but the project can still function without them.
-
-    **Examples**: Features that enhance user experience, add-ons that provide competitive advantage, or improvements that could boost performance.
-
-        **Considerations:** Should-have items are usually planned into the project but are the first to be rescheduled or scoped out if time, resources, or budget constraints arise.
-
-3.  **Could Have:** These are desirable but not necessary requirements. They are often considered as enhancements or nice-to-haves that can be implemented if resources and time allow after the Must have and Should have items are completed.
-
-    **Examples:** Cosmetic changes, minor feature enhancements, or future-proofing additions that don't impact the current operation.
-
-    **Considerations:** These items often form a backlog for future phases or iterations and are the least likely to be
-    included in the initial project scope.
-
-4.  **Won’t Have (or Would like to have but not this time):** These are items that have been agreed upon as the least critical or outside the current project scope. They are not planned for delivery in the current phase but may be revisited in the future.
-
-    **Examples:** Features that are out of scope for the current release, ideas that are interesting but not aligned with the current project goals.
-
-    **Considerations:** Clearly identifying these items helps manage stakeholder expectations and keeps the project
-    focused on delivering value within the agreed constraints.
-
-**Benefits of Using MoSCoW:**
-
-**Clarity and Focus:** It helps teams and stakeholders clearly understand and agree on what’s most important, preventing scope creep.
-
-**Resource Management:** By prioritizing tasks, teams can allocate resources more efficiently, ensuring that critical elements are completed on time.
-
-**Flexibility:** MoSCoW allows for flexibility in managing changes. If unexpected issues arise, the project can adapt by shifting the focus to Must-have items and postponing less critical work.
-
-**Stakeholder Alignment:** It fosters communication and alignment among stakeholders, ensuring that everyone is on the same page regarding priorities.
-
-![Diagram Module In NestJS](/my-notes/static/images/blogs/moscow.png)
-
-**Cons**
-
-- Over-Categorization of Requirements:
-  Challenge: Teams may struggle to avoid placing too many requirements into the "Must Have" category. This can lead to overloading the project scope with high-priority tasks, making it difficult to deliver within time and budget constraints.
-  Impact: This dilutes the effectiveness of the prioritization, as everything cannot be a top priority​
-- Subjectivity in Prioritization:
-  Challenge: The process of determining what falls into each category can be highly subjective, depending on the stakeholders' perspectives and interests.
-  Impact: Disagreements among team members or stakeholders can arise, leading to conflicts or the need for repeated negotiations to agree on priorities​
-- Neglect of Non-Critical Features:
-  Challenge: Features categorized as "Should Have," "Could Have," and especially "Won’t Have" might be neglected or deprioritized, even if they are valuable to the product or user experience.
-  Impact: This can result in a product that meets its basic functional requirements but lacks the enhancements that make it competitive or appealing to users​
-- Potential for Misalignment with Stakeholders:
-  Challenge: If stakeholders are not fully involved or aligned with the prioritization process, there may be misalignment between their expectations and the project's outcomes.
-  Impact: This can lead to dissatisfaction, especially if stakeholders feel their needs are not being met or if they do not agree with the prioritization outcomes​
-- Lack of Flexibility:
-  Challenge: MoSCoW is often seen as a rigid framework, which can be limiting in dynamic projects where requirements or priorities frequently change.
-  Impact: The inflexibility can hinder the team’s ability to adapt to new information or changing project dynamics, which is especially problematic in agile environments​
-- Over-Reliance on Initial Prioritization:
-  Challenge: Once the initial MoSCoW prioritization is set, there may be resistance to revisiting and re-prioritizing tasks as the project progresses.
-  Impact: This can lead to a lack of responsiveness to new challenges or opportunities that arise during the project lifecycle​
-- Risk of Neglecting Lower Priority Items:
-  Challenge: Items in the "Could Have" and "Won’t Have" categories may be overlooked or forgotten entirely.
-  Impact: This can result in missed opportunities for delivering additional value or addressing user needs that, while not critical, are still important​ (Creately).
-  Despite these drawbacks, the MoSCoW method remains a widely used tool for managing project priorities
-
-#### 4.<ins>Kano Model</ins>
+#### 4.Kano Model
 
 Developed by Professor Noriaki Kano in the 1980s -This model is particularly useful for understanding and prioritizing customer satisfaction and delight, helping teams to differentiate between essential features and those that can significantly enhance user satisfaction.
 These categories help product managers and teams prioritize features by understanding how each feature influences customer happiness.
