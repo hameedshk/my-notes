@@ -4,15 +4,14 @@
 const siteMetadata = {
   title: "Hameed's Personal notes",
   author: 'Hameed Syed',
-  name:"Hameed",
+  name: 'Hameed',
   fullName: 'Syed Hameed K',
   headerTitle: "shk's Blog",
   description: 'My desire to practice my skills and share my acquired knowledge fuels my endeavors.',
   language: 'en-us',
   theme: 'system',
   siteUrl: 'https://hameedshk.github.io/my-notes/',
-  analyticsURL:
-    "https://us.umami.is/websites/42b243ca-d23e-427a-b295-2b68e0479257",
+  analyticsURL: 'https://us.umami.is/websites/42b243ca-d23e-427a-b295-2b68e0479257',
   siteRepo: 'https://github.com/hameedshk',
   siteLogo: '/static/images/avatar.jpg',
   image: '/static/images/avatar.jpg',
@@ -38,10 +37,10 @@ const siteMetadata = {
   comments: {
     provider: 'giscus',
     giscusConfig: {
-      repo: "hameedshk/my-notes",
-      repositoryId: "R_kgDONK4GnA",
-      category: "comments",
-      categoryId: "DIC_kwDONK4GnM4CkQXo",
+      repo: 'hameedshk/my-notes',
+      repositoryId: 'R_kgDONK4GnA',
+      category: 'comments',
+      categoryId: 'DIC_kwDONK4GnM4CkQXo',
       mapping: 'pathname',
       reactions: '1',
       metadata: '0',
