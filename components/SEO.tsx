@@ -32,13 +32,13 @@ const CommonSEO = ({ title, description, ogType, ogImage, twImage, canonicalUrl 
       {Array.isArray(ogImage) ? (
         ogImage.map(({ url }) => <meta property="og:image" content={url} key={url} />)
       ) : (
-        <meta property="og:image" content={ogImage} key={ogImage} />
+        <meta property="og:image" content={ siteMetadata.ogImageURL } />
       )}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content={siteMetadata.twitter} />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={twImage} />
+      <meta name="twitter:image" content={siteMetadata.ogImageURL} />
       <link rel="canonical" href={canonicalUrl ? canonicalUrl : `${siteMetadata.siteUrl}${router.asPath}`} />
     </Head>
   );
