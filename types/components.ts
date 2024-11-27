@@ -30,7 +30,6 @@ export interface BlogMetaProps {
   slug: string;
   readingTime: ReadingTime;
   image: string;
-
 }
 
 export interface ViewCounterProps {
