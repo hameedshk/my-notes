@@ -16,6 +16,7 @@ interface ListLayoutProps {
   title: string;
   initialDisplayPosts?: CoreContent<Blog>[];
   pagination?: PaginationProps;
+  image:string;
 }
 
 function Pagination({ totalPages, currentPage }: PaginationProps) {
@@ -23,7 +24,7 @@ function Pagination({ totalPages, currentPage }: PaginationProps) {
   const basePath = router.pathname.split('/')[1];
   const prevPage = currentPage - 1 > 0;
   const nextPage = currentPage + 1 <= totalPages;
-
+  const imageUrl = '';
   return (
     <div className="space-y-2 pb-8 pt-6 md:space-y-5">
       <nav className="flex justify-between">
@@ -87,7 +88,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
                 className="block w-full rounded-md border border-gray-300 bg-white px-4 py-2 text-gray-900 focus:border-sky-500 focus:ring-sky-500 dark:border-gray-900 dark:bg-gray-800 dark:text-gray-100"
               />
             </label>
-            <svg
+            {/* <svg
               className="absolute right-3 top-3 h-5 w-5 text-gray-400 dark:text-gray-300"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -100,36 +101,57 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
                 strokeWidth={2}
                 d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
               />
-            </svg>
+            </svg> */}
           </div>
         </div>
-        <ul>
+        <ul className="space-y-8">
           {!filteredBlogPosts.length && 'No posts found.'}
           {displayPosts.map((post) => {
-            const { path, date, title, summary, tags } = post;
+            const { path, date, title, summary,images, tags } = post;
             return (
-              <li key={path} className="py-4">
-                <article className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
-                  <dl>
+              <li key={path} className="py-6">
+                <article className="flex flex-col xl:flex-row xl:space-x-6">
+                  {/* <dl className="xl:hidden">
                     <dt className="sr-only">Published on</dt>
                     <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
                       <time dateTime={date}>{formatDate(date, siteMetadata.locale)}</time>
                     </dd>
-                  </dl>
-                  <div className="space-y-3 xl:col-span-3">
-                    <div>
+                  </dl> */}
+                  <div className="space-y-3 xl:col-span-3 xl:flex xl:flex-row xl:space-x-6">
+                    {/* Image shown on large screens */}
+                    <div className="flex-shrink-0 xl:w-1/4">
+                      <Link href={`/${path}`}>
+                        <img
+                          src= '/my-notes/static/images/blogs/brainstorming.webp'
+                          alt={`Image for ${title}`}
+                          className="w-full rounded-lg object-cover"
+                        />
+                      </Link>
+                    </div>
+                    {/* content Section */}
+                    <div className="flex-1">
                       <h3 className="text-2xl font-bold leading-8 tracking-tight">
                         <Link href={`/${path}`} className="text-gray-900 dark:text-gray-100">
                           {title}
                         </Link>
                       </h3>
-                      <div className="flex flex-wrap">
+                      {/* Display the date below the title on smaller screens
+                      <div className="absolute bottom-0 left-0 text-base font-medium leading-6 text-gray-500 dark:text-gray-400 py-2 px-3">
+                        <time dateTime={date}>{formatDate(date, siteMetadata.locale)}</time>
+                      </div> */}
+                      <div className="mt-2 flex flex-wrap gap-2">
                         {tags.map((tag) => (
                           <Tag key={tag} text={tag} />
                         ))}
                       </div>
+                      {/* Published Date (absolute positioned at bottom-right) */}
+                      <p className="mt-4 text-gray-500 dark:text-gray-400">
+                        {summary.length > 150 ? summary.slice(0, 150) + '...' : summary}
+                      </p>
+                      <time dateTime={date} className="mt-2 block text-sm text-gray-400 dark:text-gray-500">
+                        {formatDate(date, siteMetadata.locale)}
+                      </time>
                     </div>
-                    <div className="prose max-w-none text-gray-500 dark:text-gray-400">{summary}</div>
                   </div>
                 </article>
               </li>
