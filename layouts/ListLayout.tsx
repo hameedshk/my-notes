@@ -121,11 +121,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
                     {/* Image shown on large screens */}
                     <div className="flex-shrink-0 xl:w-1/4">
                       <Link href={`/${path}`}>
-                        <img
-                          src={`${images[0]}`}
-                          alt={`Image for ${title}`}
-                          className="w-full rounded-lg object-cover"
-                        />
+                        <img src={`${images[0]}`} alt={title} className="w-full rounded-lg object-cover" />
                       </Link>
                     </div>
                     {/* content Section */}
