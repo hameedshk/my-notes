@@ -16,7 +16,7 @@ interface ListLayoutProps {
   title: string;
   initialDisplayPosts?: CoreContent<Blog>[];
   pagination?: PaginationProps;
-  image:string;
+  image: string;
 }
 
 function Pagination({ totalPages, currentPage }: PaginationProps) {
@@ -107,7 +107,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
         <ul className="space-y-8">
           {!filteredBlogPosts.length && 'No posts found.'}
           {displayPosts.map((post) => {
-            const { path, date, title, summary,images, tags } = post;
+            const { path, date, title, summary, images, tags } = post;
             return (
               <li key={path} className="py-6">
                 <article className="flex flex-col xl:flex-row xl:space-x-6">
@@ -122,7 +122,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
                     <div className="flex-shrink-0 xl:w-1/4">
                       <Link href={`/${path}`}>
                         <img
-                          src= '/my-notes/static/images/blogs/brainstorming.webp'
+                          src={`${images[0]}`}
                           alt={`Image for ${title}`}
                           className="w-full rounded-lg object-cover"
                         />
