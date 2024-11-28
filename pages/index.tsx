@@ -1,15 +1,11 @@
 import { InferGetStaticPropsType } from 'next';
 import Snowfall from 'react-snowfall';
-
 import { formatDate } from 'pliny/utils/formatDate';
 // import { NewsletterForm } from 'pliny/ui/NewsletterForm';
 import { sortedBlogPost, allCoreContent } from 'pliny/utils/contentlayer';
 import { allBlogs } from 'contentlayer/generated';
-
 import type { Blog } from 'contentlayer/generated';
-
 import siteMetadata from '@/data/siteMetadata';
-
 import Tag from '@/components/Tag';
 import Link from '@/components/Link';
 import Twemoji from '@/components/Twemoji';
@@ -38,16 +34,6 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
 
   return (
     <div className="relative">
-      {/* <Snowfall
-        snowflakeCount={60}
-        style={{
-          zIndex: -1,
-          position: 'fixed',
-          width: '100vw',
-          height: '100vh',
-        }}
-      /> */}
-
       <PageSEO title={`${headerTitle} - ${title}`} description={description} />
 
       {/* Introduce myself */}
@@ -86,44 +72,68 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
           {!posts.length && 'No posts found.'}
           {posts.slice(0, MAX_DISPLAY).map((post) => {
-            const { slug, date, title, summary, tags } = post;
+            const { slug, date, title, images, summary, tags } = post;
             return (
               <li key={slug} className="py-6">
-                <article>
-                  <div className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
-                    <dl>
-                      <dt className="sr-only">Published on</dt>
-                      <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
-                        <time dateTime={date}>{formatDate(date, siteMetadata.locale)}</time>
-                      </dd>
-                    </dl>
-                    <div className="space-y-5 xl:col-span-3">
-                      <div className="space-y-4">
-                        <div>
-                          <h2 className="text-2xl font-bold leading-8 tracking-tight">
-                            <Link href={`/blog/${slug}`} className="text-gray-900 dark:text-gray-100">
-                              {title}
-                            </Link>
-                          </h2>
-                          <div className="flex flex-wrap">
-                            {tags.map((tag) => (
-                              <Tag key={tag} text={tag} />
-                            ))}
-                          </div>
-                        </div>
-                        <div className="prose max-w-none text-gray-500 dark:text-gray-400">{summary}</div>
-                      </div>
-                      <div className="text-base font-medium leading-6">
-                        <Link
-                          href={`/blog/${slug}`}
-                          className="text-primary hover:text-sky-600 dark:hover:text-sky-400"
-                          aria-label={`Read "${title}"`}
-                        >
-                          Read more &rarr;
+                <article className="flex flex-col xl:flex-row items-start gap-6">
+                  {/* <div className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0"> */}
+                  {/**/}
+                  {/* <div className="space-y-5 xl:col-span-3"> */}
+                  <div className="flex-shrink-0 w-full xl:w-1/4">
+                    {/* <div> */}                    
+                    <Link href={`/blog/${slug}`} aria-label={`Read "${title}"`}>
+                      <Image
+                        src={images[0]} // Render the post image
+                        alt={title} // Use meaningful alt text
+                        width={400} // Adjust width based on your design
+                        height={300} // Adjust height based on your design
+                        className="rounded-lg object-cover aspect-[4/3]" // Maintains 4:3 aspect ratio
+                        onError={(e) => {
+                          e.currentTarget.src = '/static/images/website-image.jpeg'; // Fallback image
+                        }}
+                      />
+                    </Link>                    
+                  </div>
+                  {/* Post Details */}
+                  <div className="flex flex-col justify-between space-y-4 xl:space-y-0">
+                    <div>
+                      {/* Date */}
+                      <dl>
+                        <dt className="sr-only">Published on</dt>
+                        <dd className="text-sm text-gray-500 dark:text-gray-400">
+                          <time dateTime={date}>{formatDate(date, siteMetadata.locale)}</time>
+                        </dd>
+                      </dl>
+                      {/* Title */}
+                      <h2 className="text-2xl font-bold leading-8 tracking-tight">
+                        <Link href={`/blog/${slug}`} className="text-gray-900 dark:text-gray-100">
+                          {title}
                         </Link>
+                      </h2>
+                      {/* Tags */}
+                      <div className="flex flex-wrap gap-2">
+                        {tags.map((tag) => (
+                          <Tag key={tag} text={tag} />
+                        ))}
+                      </div>
+                      {/* Summary */}
+                      <div className="prose mt-2 max-w-none text-gray-500 dark:text-gray-400">{summary}                        
                       </div>
                     </div>
+                  {/* </div> */}
+                  {/* Read More Link */}
+                  <div>
+                    {/* <div className="text-base font-medium leading-6"> */}
+                      <Link
+                        href={`/blog/${slug}`}
+                        className="text-primary hover:text-sky-600 dark:hover:text-sky-400"
+                        aria-label={`Read "${title}"`}
+                      >
+                        Read more &rarr;
+                      </Link>
+                    </div>
                   </div>
+                  {/* </div> */}
                 </article>
               </li>
             );
