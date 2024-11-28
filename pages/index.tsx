@@ -116,7 +116,7 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
                         ))}
                       </div>
                       {/* Summary */}
-                      <div className="prose max-w-none mt-2  text-gray-500 dark:text-gray-400">{summary}</div>
+                      <div className="prose mt-2 max-w-none  text-gray-500 dark:text-gray-400">{summary}</div>
                     </div>
                     {/* </div> */}
                     {/* Read More Link */}
@@ -130,7 +130,7 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
                         Read more &rarr;
                       </Link>
                     </div>
-                  </div>                  
+                  </div>
                 </article>
               </li>
             );
