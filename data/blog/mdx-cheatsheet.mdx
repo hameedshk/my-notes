@@ -8,8 +8,6 @@ images: ['/my-notes/static/images/blogs/markdown-syntax.webp']
 layout: PostSimple
 ---
 
-import Twemoji from './components/Twemoji';
-
 ## Introduction
 
 This **word** is bold. This <em>word</em> is italic.
@@ -34,10 +32,25 @@ When it comes to developing applications, one of the persistent challenges devel
 - **Code Reusability**: Without predefined patterns or modules, developers often face hurdles when attempting to reuse code across different sections of the application.
 
 - **Non-standard Type Validation**: Avoid conducting validation prior to storing data in the database or validating the data received from the API.
+### Hyperlinks 
+
+1. Standard links in which both the label and URL are defined together:
+
+[label](http://example.com)
+
+2. Reference links, which can be in one of two forms:
+
+[label][key] or [key]
+
+[key]: http://example.com
+
+3.Automatic Links, where the label is the URL:
 
 ### Scalability problem
 
 As projects grow, the absence of a common architecture can hinder scalability. Without standardized patterns, scaling applications becomes intricate, leading to poor performance.
+
+### Comments 
 
 ## Conclusion
 
@@ -46,4 +59,4 @@ In conclusion, our exploration of challenges in medium to large-scale applicatio
 In the next post, I will introduce **NestJS**. This framework can help you address the issues mentioned earlier: **NestJS**, a robust **NodeJS framework**, proves instrumental in addressing issues such as maintenance complexities, weak structures, and scalability hurdles.
 
 > Sunset over the mountains on a serene evening.
-{/* Happy reading! <Twemoji emoji="clinking-beer-mugs" /> */}
+
