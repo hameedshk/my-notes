@@ -49,7 +49,11 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
           {/* <TypedBios /> */}
           <ShortDescription />
           {/* <BlogLinks /> */}
-          {/* <SpotifyNowPlaying /> */}        
+          {/* <SpotifyNowPlaying /> */}
+          {/* <p className="flex">
+              <span className="mr-2">Happy reading</span>
+              <Twemoji emoji="clinking-beer-mugs" />
+            </p> */}
         </div>
         {/* </div> */}
       </div>
@@ -68,19 +72,19 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
           {posts.slice(0, MAX_DISPLAY).map((post) => {
             const { slug, date, title, images, summary, tags } = post;
             return (
-              <li key={slug} className="py-3">
-                <article className="flex flex-col gap-2 xl:flex-row">
+              <li key={slug} className="py-6">
+                <article className="flex flex-col items-start gap-6 xl:flex-row">
                   {/* <div className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0"> */}
                   {/**/}
                   {/* <div className="space-y-5 xl:col-span-3"> */}
-                  <div className="flex flex-1 flex-col justify-between space-y-2">
+                  <div className="flex flex-1 flex-col justify-between space-y-4">
                     <h2 className="text-xl font-bold leading-8 tracking-tight text-gray-900 dark:text-gray-100 md:text-2xl">
                       <Link href={`/blog/${slug}`} aria-label={`Read "${title}"`}>
                         <Image
                           src={images[0]} // Render the post image
                           alt={title} // Use meaningful alt text
-                          width={300} // Adjust width based on your design
-                          height={225} // Adjust height based on your design
+                          width={400} // Adjust width based on your design
+                          height={300} // Adjust height based on your design
                           className="aspect-[4/3] rounded-lg object-cover" // Maintains 4:3 aspect ratio
                           onError={(e) => {
                             e.currentTarget.src = '/static/images/fallback-image.webp'; // Fallback image
@@ -100,19 +104,19 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
                         </dd>
                       </dl> */}
                       {/* Title */}
-                      <h2 className="text-xl font-bold leading-6 tracking-tight text-gray-900 dark:text-gray-100">
+                      <h2 className="text-2xl font-bold leading-8 tracking-tight">
                         <Link href={`/blog/${slug}`} className="text-gray-900 dark:text-gray-100">
                           {title}
                         </Link>
                       </h2>
                       {/* Tags */}
-                      <div className="flex flex-wrap gap-1">
+                      <div className="flex flex-wrap gap-2">
                         {tags.map((tag) => (
                           <Tag key={tag} text={tag} />
                         ))}
                       </div>
                       {/* Summary */}
-                      <div className="prose mt-2 max-w-none  text-gray-500 dark:text-gray-400">{summary}</div>
+                      <div className="prose mt-2 max-w-none text-gray-500 dark:text-gray-400">{summary}</div>
                     </div>
                     {/* </div> */}
                     {/* Read More Link */}
@@ -127,6 +131,7 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
                       </Link>
                     </div>
                   </div>
+                  {/* </div> */}
                 </article>
               </li>
             );
