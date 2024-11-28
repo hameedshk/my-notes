@@ -73,7 +73,7 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
             const { slug, date, title, images, summary, tags } = post;
             return (
               <li key={slug} className="py-6">
-                <article className="flex flex-col items-start gap-6 xl:flex-row">
+                <article className="flex flex-col gap-6 xl:flex-row">
                   {/* <div className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0"> */}
                   {/**/}
                   {/* <div className="space-y-5 xl:col-span-3"> */}
@@ -94,23 +94,15 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
                     </h2>
                   </div>
                   {/* Post Details */}
-                  <div className="flex flex-1 flex-col justify-between space-y-4">
+                  <div className="flex flex-1 flex-col justify-between">
                     <div>
-                      {/* Date */}
-                      {/* <dl>
-                        <dt className="sr-only">Published on</dt>
-                        <dd className="text-sm text-gray-500 dark:text-gray-400">
-                          <time dateTime={date}>{formatDate(date, siteMetadata.locale)}</time>
-                        </dd>
-                      </dl> */}
-                      {/* Title */}
                       <h2 className="text-2xl font-bold leading-8 tracking-tight">
                         <Link href={`/blog/${slug}`} className="text-gray-900 dark:text-gray-100">
                           {title}
                         </Link>
                       </h2>
                       {/* Tags */}
-                      <div className="flex flex-wrap gap-2">
+                      <div className="mt-2 flex flex-wrap gap-2">
                         {tags.map((tag) => (
                           <Tag key={tag} text={tag} />
                         ))}
@@ -120,7 +112,7 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
                     </div>
                     {/* </div> */}
                     {/* Read More Link */}
-                    <div className="flex items-center justify-between text-sm text-gray-500 dark:text-gray-400">
+                    <div className="mt-auto flex items-center justify-between text-sm text-gray-500 dark:text-gray-400">
                       <time dateTime={date}>{formatDate(date, siteMetadata.locale)}</time>
                       <Link
                         href={`/blog/${slug}`}
