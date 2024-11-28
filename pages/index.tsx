@@ -75,24 +75,24 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
             const { slug, date, title, images, summary, tags } = post;
             return (
               <li key={slug} className="py-6">
-                <article className="flex flex-col xl:flex-row items-start gap-6">
+                <article className="flex flex-col items-start gap-6 xl:flex-row">
                   {/* <div className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0"> */}
                   {/**/}
                   {/* <div className="space-y-5 xl:col-span-3"> */}
-                  <div className="flex-shrink-0 w-full xl:w-1/4">
-                    {/* <div> */}                    
+                  <div className="w-full flex-shrink-0 xl:w-1/4">
+                    {/* <div> */}
                     <Link href={`/blog/${slug}`} aria-label={`Read "${title}"`}>
                       <Image
                         src={images[0]} // Render the post image
                         alt={title} // Use meaningful alt text
                         width={400} // Adjust width based on your design
                         height={300} // Adjust height based on your design
-                        className="rounded-lg object-cover aspect-[4/3]" // Maintains 4:3 aspect ratio
+                        className="aspect-[4/3] rounded-lg object-cover" // Maintains 4:3 aspect ratio
                         onError={(e) => {
                           e.currentTarget.src = '/static/images/website-image.jpeg'; // Fallback image
                         }}
                       />
-                    </Link>                    
+                    </Link>
                   </div>
                   {/* Post Details */}
                   <div className="flex flex-col justify-between space-y-4 xl:space-y-0">
@@ -117,13 +117,12 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
                         ))}
                       </div>
                       {/* Summary */}
-                      <div className="prose mt-2 max-w-none text-gray-500 dark:text-gray-400">{summary}                        
-                      </div>
+                      <div className="prose mt-2 max-w-none text-gray-500 dark:text-gray-400">{summary}</div>
                     </div>
-                  {/* </div> */}
-                  {/* Read More Link */}
-                  <div>
-                    {/* <div className="text-base font-medium leading-6"> */}
+                    {/* </div> */}
+                    {/* Read More Link */}
+                    <div>
+                      {/* <div className="text-base font-medium leading-6"> */}
                       <Link
                         href={`/blog/${slug}`}
                         className="text-primary hover:text-sky-600 dark:hover:text-sky-400"
