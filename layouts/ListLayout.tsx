@@ -16,7 +16,6 @@ interface ListLayoutProps {
   title: string;
   initialDisplayPosts?: CoreContent<Blog>[];
   pagination?: PaginationProps;
-  image: string;
 }
 
 function Pagination({ totalPages, currentPage }: PaginationProps) {
