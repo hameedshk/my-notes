@@ -57,9 +57,7 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
         </div>
         {/* </div> */}
       </div>
-
       <PopularTags />
-
       {/* List all post */}
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <div className="space-y-2 py-6 md:space-y-5">
@@ -79,31 +77,32 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
                   {/* <div className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0"> */}
                   {/**/}
                   {/* <div className="space-y-5 xl:col-span-3"> */}
-                  <div className="w-full flex-shrink-0 xl:w-1/4">
-                    {/* <div> */}
-                    <Link href={`/blog/${slug}`} aria-label={`Read "${title}"`}>
-                      <Image
-                        src={images[0]} // Render the post image
-                        alt={title} // Use meaningful alt text
-                        width={400} // Adjust width based on your design
-                        height={300} // Adjust height based on your design
-                        className="aspect-[4/3] rounded-lg object-cover" // Maintains 4:3 aspect ratio
-                        onError={(e) => {
-                          e.currentTarget.src = '/static/images/website-image.jpeg'; // Fallback image
-                        }}
-                      />
-                    </Link>
+                  <div className="flex flex-1 flex-col justify-between space-y-4">
+                    <h2 className="text-xl font-bold leading-8 tracking-tight text-gray-900 dark:text-gray-100 md:text-2xl">
+                      <Link href={`/blog/${slug}`} aria-label={`Read "${title}"`}>
+                        <Image
+                          src={images[0]} // Render the post image
+                          alt={title} // Use meaningful alt text
+                          width={400} // Adjust width based on your design
+                          height={300} // Adjust height based on your design
+                          className="aspect-[4/3] rounded-lg object-cover" // Maintains 4:3 aspect ratio
+                          onError={(e) => {
+                            e.currentTarget.src = '/static/images/fallback-image.webp'; // Fallback image
+                          }}
+                        />
+                      </Link>
+                    </h2>
                   </div>
                   {/* Post Details */}
-                  <div className="flex flex-col justify-between space-y-4 xl:space-y-0">
+                  <div className="flex flex-1 flex-col justify-between space-y-4">
                     <div>
                       {/* Date */}
-                      <dl>
+                      {/* <dl>
                         <dt className="sr-only">Published on</dt>
                         <dd className="text-sm text-gray-500 dark:text-gray-400">
                           <time dateTime={date}>{formatDate(date, siteMetadata.locale)}</time>
                         </dd>
-                      </dl>
+                      </dl> */}
                       {/* Title */}
                       <h2 className="text-2xl font-bold leading-8 tracking-tight">
                         <Link href={`/blog/${slug}`} className="text-gray-900 dark:text-gray-100">
@@ -121,11 +120,11 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
                     </div>
                     {/* </div> */}
                     {/* Read More Link */}
-                    <div>
-                      {/* <div className="text-base font-medium leading-6"> */}
+                    <div className="flex items-center justify-between text-sm text-gray-500 dark:text-gray-400">
+                      <time dateTime={date}>{formatDate(date, siteMetadata.locale)}</time>
                       <Link
                         href={`/blog/${slug}`}
-                        className="text-primary hover:text-sky-600 dark:hover:text-sky-400"
+                        className="font-medium text-primary hover:text-sky-600 dark:hover:text-sky-400"
                         aria-label={`Read "${title}"`}
                       >
                         Read more &rarr;
