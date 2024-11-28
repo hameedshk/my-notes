@@ -49,11 +49,7 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
           {/* <TypedBios /> */}
           <ShortDescription />
           {/* <BlogLinks /> */}
-          {/* <SpotifyNowPlaying /> */}
-          {/* <p className="flex">
-              <span className="mr-2">Happy reading</span>
-              <Twemoji emoji="clinking-beer-mugs" />
-            </p> */}
+          {/* <SpotifyNowPlaying /> */}        
         </div>
         {/* </div> */}
       </div>
