@@ -2,11 +2,11 @@
 /** @type {import("pliny/config").PlinyConfig } */
 
 const siteMetadata = {
-  title: "Hameed's Personal notes",
+  title: 'insights,experience and learnings',
   author: 'Hameed Syed',
   name: 'Hameed',
   fullName: 'Syed Hameed K',
-  headerTitle: "SHK's Blog",
+  headerTitle: "Hameed's dev blog",
   description: 'My desire to practice my skills and share my acquired knowledge fuels my endeavors.',
   language: 'en-us',
   theme: 'system',
