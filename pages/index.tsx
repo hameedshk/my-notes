@@ -61,10 +61,10 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
       {/* List all post */}
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <div className="space-y-2 py-6 md:space-y-5">
-          <h1 className="!mt-0 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl">
+          <h2 className="!mt-0 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl">
             Recent Posts
-          </h1>
-          <p className="!mt-2 text-lg leading-7 text-gray-500 dark:text-gray-400">{siteMetadata.description}</p>
+          </h2>
+          {/* <p className="!mt-2 text-lg leading-7 text-gray-500 dark:text-gray-400">{siteMetadata.description}</p> */}
         </div>
 
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
