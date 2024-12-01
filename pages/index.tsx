@@ -19,6 +19,7 @@ import BlogLinks from '@/components/homepage/BlogLinks';
 import SpotifyNowPlaying from '@/components/homepage/SpotifyNowPlaying';
 import PopularTags from '@/components/homepage/PopularTags';
 import Avatar from '@/components/homepage/Avatar';
+import ProfileCard from '@/components/homepage/ProfileCard';
 
 const MAX_DISPLAY = 3;
 
@@ -31,11 +32,9 @@ export const getStaticProps = async () => {
 
 export default function Home({ posts }: InferGetStaticPropsType<typeof getStaticProps>) {
   const { headerTitle, title, description } = siteMetadata;
-
   return (
     <div className="relative">
       <PageSEO title={`${headerTitle} - ${title}`} description={description} />
-
       {/* Introduce myself */}
       <div className="mt-8 dark:divide-gray-700 md:mt-8">
         {/* <Greeting /> */}
@@ -47,15 +46,12 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
         <div className="text-md my-auto flex flex-col leading-6">
           <Heading />
           {/* <TypedBios /> */}
-          <ShortDescription />
-          {/* <BlogLinks /> */}
-          {/* <SpotifyNowPlaying /> */}
-          {/* <p className="flex">
-              <span className="mr-2">Happy reading</span>
-              <Twemoji emoji="clinking-beer-mugs" />
-            </p> */}
+          <div className="text-base leading-7 text-gray-600 dark:text-gray-400 md:text-lg md:leading-8">
+            <ShortDescription />
+            <BlogLinks />
+            <ProfileCard />
+          </div>
         </div>
-        {/* </div> */}
       </div>
       {/* <PopularTags /> */}
       {/* List all post */}
@@ -137,11 +133,6 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
           </Link>
         </div>
       )}
-      {/* {siteMetadata.newsletter.provider && (
-        <div className="flex items-center justify-center pt-4">
-          <NewsletterForm />
-        </div>
-      )} */}
     </div>
   );
 }
