@@ -1,8 +1,8 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
-
+import { clsx } from 'clsx';
 import Image from '@/components/Image';
-import ProfileInfo from '@/components/homepage/ProfileInfo';
 import SpotifyNowPlaying from '@/components/homepage/SpotifyNowPlaying';
+import { ProfileInfo } from './ProfileInfo';
 
 const ProfileCard = () => {
   const ref = useRef(null);
@@ -52,13 +52,17 @@ const ProfileCard = () => {
 
   return (
     <div
-      className="z-10 scale-100 transition-all duration-200 ease-out hover:z-50 hover:scale-[1.11]"
+      className="z-10 mb-8 scale-100 transition-all duration-200 ease-out hover:z-50 md:mb-0 md:hover:scale-[1.15]"
       style={{ perspective: '600px' }}
       ref={ref}
     >
       <div
         style={style}
-        className="overflow-hidden rounded shadow-lg shadow-slate-300 transition-all duration-200 ease-out dark:shadow-sky-700/50"
+        className={clsx(
+          'flex flex-col overflow-hidden transition-all duration-200 ease-out md:rounded-lg',
+          'shadow-demure dark:shadow-mondegreen bg-white dark:bg-dark',
+          'outline outline-1 outline-gray-100 dark:outline-gray-600'
+        )}
       >
         <Image
           src={'/my-notes/static/images/avatar.jpg'}
@@ -66,15 +70,16 @@ const ProfileCard = () => {
           width={550}
           height={350}
           style={{
-            objectPosition: '50% 0%',
+            objectPosition: '50% 15%',
             objectFit: 'cover',
             width: '100%',
-            aspectRatio: '20/16',
+            aspectRatio: '383/240',
           }}
+          loading="eager"
         />
         {/* <SpotifyNowPlaying /> */}
         <ProfileInfo />
-        <div className="h-1.5 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600"></div>
+        <span className="h-1.5 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600"></span>
       </div>
     </div>
   );

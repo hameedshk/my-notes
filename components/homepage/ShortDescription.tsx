@@ -14,17 +14,17 @@ const ShortDescription = () => {
           Angular.
         </a>
       </p>
-      <p>
-        With strong system design expertise, I explore how robust architecture and user-driven development can transform
+      {/*<p>
+         With strong system design expertise, I explore how robust architecture and user-driven development can transform
         digital experiences.You can view my experience here{' '}
         <a target="_blank" href="https://hameedshk.github.io/my-notes/resume" rel="noreferrer">
           resume.
         </a>
-      </p>
-      <p>
+      </p> */}
+      {/* <p>
         Join me as I share insights, best practices, and lessons learned from building innovative software solutions
         that balance technical excellence and customer needs.
-      </p>
+      </p> */}
       <p>
         You can me contact me on{' '}
         <a target="_blank" href="https://www.linkedin.com/in/syedhameed/" rel="noreferrer">

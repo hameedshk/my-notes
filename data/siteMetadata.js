@@ -21,7 +21,7 @@ const siteMetadata = {
   github: 'https://github.com/hameedshk',
   facebook: 'https://www.facebook.com/hameed.dev',
   linkedin: 'https://www.linkedin.com/in/syedhameedk',
-  twitter: 'https://twitter.com/hameed',
+  x: 'https://x.com/?kshameed7',
   youtube: 'https://youtube.com',
   locale: 'en-US',
   socialAccounts: {

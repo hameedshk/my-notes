@@ -20,6 +20,7 @@ import SpotifyNowPlaying from '@/components/homepage/SpotifyNowPlaying';
 import PopularTags from '@/components/homepage/PopularTags';
 import Avatar from '@/components/homepage/Avatar';
 import ProfileCard from '@/components/homepage/ProfileCard';
+import { Container } from '@/components/homepage/ui/container';
 
 const MAX_DISPLAY = 3;
 
@@ -33,35 +34,41 @@ export const getStaticProps = async () => {
 export default function Home({ posts }: InferGetStaticPropsType<typeof getStaticProps>) {
   const { headerTitle, title, description } = siteMetadata;
   return (
-    <div className="relative">
-      <PageSEO title={`${headerTitle} - ${title}`} description={description} />
+    <Container as="div" className="pt-4 lg:pt-12">
+      {/* <PageSEO title={`${headerTitle} - ${title}`} description={description} /> */}
       {/* Introduce myself */}
-      <div className="mt-8 dark:divide-gray-700 md:mt-8">
-        {/* <Greeting /> */}
-        {/* <div className="flex flex-col justify-between md:my-4 md:pb-8 xl:flex-row"> */}
-        {/* <Avatar /> */}
-        {/* <div className="max-h-[430px] overflow-hidden rounded-md">
-            <Image src={'/static/images/avatar.jpg'} alt="avatar" width={430} height={350} />
-          </div> */}
-        <div className="text-md my-auto flex flex-col leading-6">
-          <Heading />
-          {/* <TypedBios /> */}
+      <div className="py-6 md:pb-8 xl:grid xl:grid-cols-3">
+        <div className="space-y-4 md:space-y-6 md:pr-8 xl:col-span-2">
+          <Greeting />
           <div className="text-base leading-7 text-gray-600 dark:text-gray-400 md:text-lg md:leading-8">
+            <Heading />
+            {/* <div className="text-base leading-7 text-gray-600 dark:text-gray-400 md:text-lg md:leading-8"> */}
             <ShortDescription />
+            {/* <div className="mb-6 mt-4 md:mb-8">
+              <p>I started learning to code in 2012 and have been hooked ever since.</p>
+              <p>I landed my first job as a Associate Software Engineer in 2014.</p>
+              <p>I have a passion for .NET, web dev, and PRODUCT management.</p>
+              <p>I started this blog to document and share my knowledge & experience.</p>
+            </div> */}
             <BlogLinks />
-            <ProfileCard />
+            <p className="my-6 flex md:my-8">
+              <span className="mr-2">Happy reading</span>
+              <Twemoji emoji="clinking-beer-mugs" />
+            </p>
           </div>
+        </div>
+        <div className="hidden pl-4 pt-8 xl:block">
+          <ProfileCard />
         </div>
       </div>
       {/* <PopularTags /> */}
       {/* List all post */}
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
-        <div className="space-y-2 py-6 md:space-y-5">
+        {/* <div className="space-y-2 py-6 md:space-y-5">
           <h2 className="!mt-0 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-5xl">
             Recent Posts
           </h2>
-          {/* <p className="!mt-2 text-lg leading-7 text-gray-500 dark:text-gray-400">{siteMetadata.description}</p> */}
-        </div>
+        </div> */}
 
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
           {!posts.length && 'No posts found.'}
@@ -133,6 +140,6 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
           </Link>
         </div>
       )}
-    </div>
+    </Container>
   );
 }
