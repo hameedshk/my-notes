@@ -1,0 +1,345 @@
+---
+title: 'Top Prioritization Framework-1'
+date: '2024-10-10'
+lastmod: '2024-10-11'
+tags: ['product', 'feature']
+summary: 'Feature prioritization is a critical task in product management. In this post, we will take a closer look at yop prioritization framework.'
+images: ['/static/images/blogs/brainstorming.webp']
+layout: 'PostSimple'
+---
+
+[comment]: # (import Twemoji from './components/Twemoji'; )
+
+![brain storming professionals](/static/images/blogs/brainstorming.webp)
+
+## Introduction
+
+Feature prioritization is a critical task in product management, where you decide which features or enhancements should be developed and released first based on various factors like <em><ins>cost,value, effort, impact, and alignment</ins></em> with business goals.
+
+Effective prioritization ensures that the product development team focuses on the most important features that deliver the highest value to users and the business.
+
+### Why Feature prioritization ?
+
+- **Resource Management**: Development resources (time, budget, people) are often limited, so prioritizing features ensures optimal use of these resources.
+
+- **Strategic Alignment**: Helps ensure that the development work aligns with the company’s strategic goals.
+
+- **User Satisfaction**: By prioritizing features that address the most pressing user needs, you improve user satisfaction and retention.
+
+- **Market Relevance**: Keeps your product competitive by focusing on features that differentiate your product in the market.
+
+- **Stress reduction**: From customer interactions to executive presentations, the responsibilities of a PM are vast and varied, often leading to a risk of burnout if not managed adeptly.
+
+### Prioritization frameworks
+
+Feature prioritization frameworks help teams make informed decisions on which features to build, improve, or drop. Here are the top 10 most widely used frameworks.
+
+| **Framework**        | **Description**                                                            |
+|----------------------|----------------------------------------------------------------------------|
+| [Value vs Effort](#1value-vs-effort)            | A goal-setting framework for defining and tracking objectives and key results. |
+| [MoSCoW](#2moscow-method)           | A method for prioritizing features based on Must Have, Should Have, Could Have, and Won’t Have. |
+| [RICE](#3rice-scoring)             | A prioritization framework focusing on Reach, Impact, Confidence, and Effort. |
+| [Kano Model](#4kano-model)      | A strategic management framework that helps in building startup business models. |
+| **SWOT Analysis**    | A framework to analyze Strengths, Weaknesses, Opportunities, and Threats of a product. |
+| **Product-Market Fit** | A model to assess if the product satisfies a strong market demand.        |
+| **OKRs**             | A goal-setting framework for defining and tracking objectives and key results. |
+| **Business Model Canvas** | A strategic tool to document, design, and challenge business models. |
+| **Customer Journey Mapping** | A framework that helps understand the customer’s experience from awareness to loyalty. |
+
+#### 1.Value vs Effort
+
+**Overview**: This matrix helps you prioritize features by comparing their expected **<ins>value</ins>** (benefit) against the <ins>**effort**</ins> (resources) required to implement them.
+
+<ins>**Implementation Steps**:</ins>
+
+- **Write down all potential features.**
+
+- **Estimate Value**: For each feature, estimate the potential value it will bring to users or the business. Value can be assessed by how well the feature aligns with business goals, user needs, or competitive advantage.
+- **Estimate Effort**: Estimate the effort in terms of time, resources, and complexity to build each feature.
+- **Plot on the Matrix**: Place each feature on a 2x2 matrix where one axis is Value (Low to High) and the other is Effort (Low to High).
+
+  - **High Value, Low Effort(Quick wins)** : These are quick wins and should be prioritized.
+  
+  - **High Value, High Effort(strategic)**: Consider these as strategic projects; they may take time but have
+  significant impact.
+  
+  - **Low Value, Low Effort(fill ins)**: These can be done if resources allow, but they’re not critical,indicating
+  it can be worked on when there’s time available
+  
+  - **Low Value, High Effort(time sinks)**: These are often not worth pursuing unless necessary for strategic
+  reasons.
+  
+![Value vs effort diagram](/static/images/blogs/value-vs-effort.png "Value vs Effort 2D graph")
+
+[Example Features]: #
+
+Feature A is a quick win, offering high value with low effort.
+
+Feature D is a strategic project, with both high value and high effort.
+
+Feature G is a fill-in, providing low value with minimal effort.
+
+Feature B is a time sink, requiring high effort but offering less value.
+
+![Diagram Module In NestJS](/static/images/blogs/value-vs-eff-example.png)
+
+This matrix helps prioritize which features to tackle first, ensuring that resources are used efficiently to maximize impact. ​​
+
+**Pros**: 
+- Simple and visual.
+- easy to understand.
+
+**Cons**: 
+- Subjective estimates.
+- Doesn’t consider user impact in a nuanced way as its subjective estimation.
+- Biased-Bias Toward Measurable Value.
+- Overemphasis on Quick Wins.
+
+#### 2.MoSCoW Method
+
+This method is particularly useful in managing scope and ensuring that the most critical elements of a project are completed first.
+
+Since this is the most easiest and most used method ,lets deep dive into it.
+
+1.  **Must Have**: These are non-negotiable requirements that are critical to the success of the project. Without these, the project would fail or be deemed unsuccessful.
+
+    *Examples*: Core features that the product cannot function without, regulatory or legal requirements, essential functionality that must be delivered within a fixed timeframe.
+
+    **Considerations**: If any "Must have" item is not delivered, the project could be delayed or even canceled. It’s important to keep these to a minimum to ensure feasibility.
+
+2.  **Should Have**: These are important but not vital requirements. They add significant value and are expected to be included if possible, but the project can still function without them.
+
+    *Examples*: Features that enhance user experience, add-ons that provide competitive advantage, or improvements that could boost performance.
+
+    **Considerations:** Should-have items are usually planned into the project but are the first to be rescheduled or scoped out if time, resources, or budget constraints arise.
+
+3.  **Could Have:** These are desirable but not necessary requirements. They are often considered as enhancements or nice-to-haves that can be implemented if resources and time allow after the Must have and Should have items are completed.
+
+    *Examples:* Cosmetic changes, minor feature enhancements, or future-proofing additions that don't impact the current operation.
+
+    **Considerations:** These items often form a backlog for future phases or iterations and are the least likely to be
+    included in the initial project scope.
+
+4. **Won’t Have (or Would like to have but not this time):** These are items that have been agreed upon as the least critical or outside the current project scope. They are not planned for delivery in the current phase but may be revisited in the future.
+
+    *Examples:* Features that are out of scope for the current release, ideas that are interesting but not aligned with the current project goals.
+
+    **Considerations:** Clearly identifying these items helps manage stakeholder expectations and keeps the project
+    focused on delivering value within the agreed constraints.
+
+![moscow application simple example](/static/images/blogs/moscow.png "moscow breakdown")
+
+**Pros**
+
+- Clarity and Focus: It helps teams and stakeholders clearly understand and agree on what’s most important, preventing scope creep.
+
+- Resource Management: By prioritizing tasks, teams can allocate resources more efficiently, ensuring that critical elements are completed on time.
+
+- Flexibility: MoSCoW allows for flexibility in managing changes. If unexpected issues arise, the project can adapt by shifting the focus to Must-have items and postponing less critical work.
+
+- Stakeholder Alignment: It fosters communication and alignment among stakeholders, ensuring that everyone is on the same page regarding priorities.
+
+**Cons**
+
+- Over-Categorization of Requirements:
+
+  - Challenge: Teams may struggle to avoid placing too many requirements into the "Must Have" category. This can lead to overloading the project scope with high-priority tasks, making it difficult to deliver within time and budget constraints.
+
+  Impact: This dilutes the effectiveness of the prioritization, as everything cannot be a top priority​
+
+- Subjectivity in Prioritization:
+
+  - Challenge: The process of determining what falls into each category can be highly subjective, depending on the stakeholders' perspectives and interests.
+
+  Impact: Disagreements among team members or stakeholders can arise, leading to conflicts or the need for repeated negotiations to agree on priorities​
+- Neglect of Non-Critical Features:
+
+  - Challenge: Features categorized as "Should Have," "Could Have," and especially "Won’t Have" might be neglected or deprioritized, even if they are valuable to the product or user experience.
+
+  Impact: This can result in a product that meets its basic functional requirements but lacks the enhancements that make it competitive or appealing to users​
+
+- Potential for Misalignment with Stakeholders:
+
+  Challenge: If stakeholders are not fully involved or aligned with the prioritization process, there may be misalignment between their expectations and the project's outcomes.
+
+  Impact: This can lead to dissatisfaction, especially if stakeholders feel their needs are not being met or if they do not agree with the prioritization outcomes​
+
+- Lack of Flexibility:
+
+  Challenge: MoSCoW is often seen as a rigid framework, which can be limiting in dynamic projects where requirements or priorities frequently change.
+
+  Impact: The inflexibility can hinder the team’s ability to adapt to new information or changing project dynamics, which is especially problematic in agile environments​
+
+- Over-Reliance on Initial Prioritization:
+
+  Challenge: Once the initial MoSCoW prioritization is set, there may be resistance to revisiting and re-prioritizing tasks as the project progresses.
+
+  Impact: This can lead to a lack of responsiveness to new challenges or opportunities that arise during the project lifecycle​
+
+- Risk of Neglecting Lower Priority Items:
+
+  Challenge: Items in the "Could Have" and "Won’t Have" categories may be overlooked or forgotten entirely.
+
+  Impact: This can result in missed opportunities for delivering additional value or addressing user needs that, while not critical, are still important​ (Creately).
+
+Despite these drawbacks, the MoSCoW method remains a widely used tool for managing project priorities
+
+#### 3.RICE Scoring
+
+**Overview**: RICE stands for **Reach**, **Impact**, **Confidence**, and **Effort**. This framework provides a
+quantitative way to prioritize features based on these four criteria.
+
+[**Steps**]: #
+
+- **Reach**: Estimate how many people or users the feature will affect. This could be measured by the number of users,sessions, transactions, etc. 
+  
+  Example: If a feature will be used by 1,000 users per month, the Reach score is 1,000.
+
+  **Consideration**: Reach helps determine the scope of the feature's impact.
+
+- **Impact**: Estimate how much the feature will contribute to a specific goal, usually on a scale (e.g., 3 = high, 2  = medium, 1 = low). How much the feature will affect an individual user or customer, typically measured on a scale  (e.g., 1 to 5, where 5 is a massive impact and 1 is minimal impact). 
+
+  Example: A feature that significantly improves the user experience might have an Impact score of 4.
+
+  **Consideration**: Impact assesses the magnitude of the benefit for each user.
+
+- **Confidence**: Rate your confidence in the accuracy of your Reach and Impact estimates, usually on a percentage
+  scale. How confident the team is in the estimates of Reach and Impact. This is also scored on a percentage scale
+  (e.g., 100% for very confident, 80% for somewhat confident).
+  
+  Example: If the team has limited data, they might assign a Confidence score of 70%.
+
+  **Consideration**: Confidence adjusts the score to account for uncertainty, ensuring that projects with shaky assumptions are
+  deprioritized.
+
+- **Effort**: Estimate the amount of time and resources needed to implement the feature. This is often measured in
+  person-months or weeks.How much time or resources are required to complete the feature, typically measured in
+  person-months.
+  
+  Example: If a feature takes 2 months of developer time, the Effort score is 2.
+
+  **Consideration**: Lower Effort scores contribute to higher prioritization.
+
+```javascript
+//Higher RICE scores indicate higher priority
+RICE Score =(Reach * Impact * Confidence) / Effort.
+```
+_Example of RICE Scoring:_
+
+Imagine a team evaluating three different features:
+
+- **Feature A**: Improved Onboarding Flow
+  - Reach: 2,000 users/month 
+  - Impact: 3 (medium) 
+  - Confidence: 90%
+  - Effort : 2 months
+  - RICE Score: 2000×3×0.9=5400/2= 2,700
+
+- **Feature B**: New Reporting Dashboard
+  - Reach: 500 users/month
+  - Impact: 5 (high)
+  - Confidence: 80%
+  - Effort: 3 months
+  - RICE Score: 500×5×0.8=667/3=667
+
+- **Feature C**: Social Media Integration
+  - Reach: 3,000 users/month
+  - Impact: 2 (low)
+  - Confidence: 100%
+  - Effort: 1.5 months
+  - RICE Score: 3000×2×1=6,000/1.5=4,000
+
+**Prioritization Outcome** : 
+
+**Feature C** has the highest RICE score (4,000), suggesting it should be prioritized first.
+
+**Feature A** comes next with a score of 2,700, followed by **Feature B** with a score of 667.
+
+![RICE prioritization example](/static/images/blogs/rice-prioritization.png "RICE Model example")
+
+**Pros**
+
+- Provides a clear, data-driven decision; balances  value and effort,accounts for uncertainty .
+
+**Cons** 
+
+- Requires accurate data and estimation; can be time-consuming 
+- **Subjectivity in Scoring**: Estimates for
+Reach, Impact, and Effort can still be subjective and may vary between team members.
+- **Complexity**: The scoring process can be time-consuming, especially if the data is hard to
+gather.
+- **Overemphasis on Quantifiable Factors**: Qualitative factors like strategic alignment or brand perception might be
+underrepresented. data-driven decision; balances value and effort,accounts for uncertainty
+
+RICE scoring provides a structured approach to feature prioritization, ensuring that the team focuses on the most
+valuable and feasible projects.
+
+#### 4.Kano Model
+
+Developed by Professor Noriaki [Kano](https://en.wikipedia.org/wiki/Kano_model) in the 1980s.This model is particularly useful for understanding and prioritizing customer satisfaction and delight, helping teams to differentiate between essential features and those that can significantly enhance user satisfaction.
+
+These categories help product managers and teams prioritize features by understanding how each feature influences customer happiness.
+
+![Diagram Kano Model](/static/images/blogs/kano1.png)
+
+Kano Model Categories
+
+**Must-Be (Basic expectations):** These are fundamental features that customers expect. Their absence leads to dissatisfaction, but their presence doesn’t significantly increase satisfaction because they are assumed to be a given.
+
+_Examples: A mobile phone must have basic calling functionality, or a website must load when accessed._
+
+**Impact:** These are "hygiene factors" that do not necessarily delight the customer but are necessary to avoid dissatisfaction.
+
+**One-Dimensional (Performance Needs):** These features have a direct relationship with customer satisfaction. The better you execute on these features, the more satisfied customers will be.
+
+_Examples:Better battery life on a smartphone or Faster load times on a website._
+
+**Impact:** Performance needs provide a competitive advantage and are often the focus for continuous improvement.
+
+**Attractive (Excitement Needs):** These are features that customers do not expect but are delighted when they experience them. They can create significant positive feelings.
+
+_Examples: A free add-on service, surprise discounts, or innovative design features._
+
+**Impact:** Attractive features can set a product apart from competitors and increase customer loyalty.
+
+**Indifferent:** Features that customers are indifferent about; they neither increase nor decrease satisfaction.
+
+_Examples: A mobile app offering support for an obscure, rarely-used language (e.g., Latin)._
+
+**Impact:** These features should be minimized or avoided as they do not add significant value.
+
+**Reverse:** Features that some customers may like, but others may dislike. These can create satisfaction for one group and dissatisfaction for another.
+
+_Examples: Advanced users of a coding editor dislike an auto-complete feature they cannot disable._
+
+**Impact:** These features require careful consideration and often need to be tailored to specific customer segments.
+
+![Diagram example Kano Model](/static/images/blogs/kano2.png)
+
+**Applying the Kano Model**
+
+**Customer Surveys:** Use surveys to ask customers how they would feel if a feature was present or absent. This can help you categorize features into the Kano categories.
+
+**Prioritization:** Once features are categorized, focus on ensuring all Must-Be features are included, optimizing One-Dimensional features, and strategically adding Attractive features to surprise and delight customers.
+
+**Review and Iterate:** As customer expectations evolve, regularly review and update the feature categories to ensure alignment with current market demands.
+
+**Pros:**
+
+- Helps in prioritizing features based on actual customer satisfaction.
+- Encourages a focus on innovation and customer delight.
+- Provides a framework for balancing basic needs with exciting features.
+
+**Cons:**
+
+- Requires detailed customer feedback, which can be time-consuming to gather.
+- May be challenging to categorize features accurately without clear customer input.
+- The model's qualitative nature can lead to subjective interpretations of results.
+
+The Kano Model is a valuable tool for product managers who want to prioritize features based on customer satisfaction and competitive differentiation. It complements other frameworks like MoSCoW by adding a focus on the emotional impact of features on users.
+## References
+
+- [Wikipedia](https://en.wikipedia.org/)
+- [productplan](https://www.productplan.com/)
+
+[comment]: # ( Happy reading! <Twemoji emoji="clinking-beer-mugs" /> )
