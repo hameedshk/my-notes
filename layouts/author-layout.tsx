@@ -35,16 +35,17 @@ export function AuthorLayout({ children }: Props) {
               </h2>
               <p>
                 I'm <strong>Hameed Syed K</strong> (alias <strong>Hameed</strong> at work), a Product
-                Owner from <strong>India</strong>. I have a passion for all things{' '}
-                <strong>Javascript</strong>. I enjoy building eCommerce software and stuff related
-                to web dev. I work mainly with <strong>Typescript</strong>, <strong>React</strong>,{' '}
-                <strong>NodeJS</strong>, <strong>Remix</strong>, and <strong>TailwindCSS</strong>.
+                Owner from <strong>India</strong>. Welcome to my blog! As a seasoned Product Owner and software developer, I combine 3 years of leadership in Agile teams with a deep passion for programming in .NET and Angular.               
               </p>
               <p>
                 This blog serves as a journal for documenting and sharing the insights and knowledge
                 I've gained as a software engineer. Building, writing, and sharing things is a great
                 way for me to solidify my understanding of new concepts and ideas.
               </p>
+              <p>
+              To Store: A personal repository of what I’ve learned, read, and applied —a digital journal to ensure nothing gets forgotten as time flys.
+              </p>
+              To Share: Insights, lessons, and strategies I’ve gathered while navigating the intersection of tech and product.
               <p>
                 I would greatly appreciate any comments and thoughts on my posts{' '}
                 <Twemoji emoji="clinking-beer-mugs" />.
@@ -60,7 +61,7 @@ export function AuthorLayout({ children }: Props) {
               </div>
               <CareerTimeline />
             </div>
-            <div>
+            {/* <div>
               <h2>Tech stack</h2>
               <p>
                 This blog is hosted on{' '}
@@ -121,11 +122,11 @@ export function AuthorLayout({ children }: Props) {
                   components, adding <code>/snippets</code>, <code>/books</code>,{' '}
                   <code>/movies</code> page, etc.
                 </li>
-                {/* <li>
+                <li>
                   <Twemoji emoji="inbox-tray" /> Bumping up <code>mdx-bundler</code>,{' '}
                   <code>rehype</code>/<code>remark</code> plugins and dependencies to the latest
                   version
-                </li> */}
+                </li> 
               </ul>
               <p>
                 See my{' '}
@@ -155,7 +156,7 @@ export function AuthorLayout({ children }: Props) {
                   </li>
                 </ul>
               </div>
-            </div>
+            </div> */}
             <div>
               <h2>Assets</h2>
               <p>

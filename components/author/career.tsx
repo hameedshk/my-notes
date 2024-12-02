@@ -7,53 +7,51 @@ import { GrowingUnderline } from '~/components/ui/growing-underline'
 
 const EXPERIENCES = [
   {
-    org: 'Weaverse.io',
-    url: 'https://weaverse.io',
-    logo: '/static/images/weaverse-logo.png',
-    start: 'Mar 2022',
+    org: 'Airbus',
+    url: 'https://airbus.com',
+    logo: '/static/images/airbus-logo.png',
+    start: 'Apr 2022',
     end: 'Present',
-    title: 'CTO / Co.Founder / Software Engineer',
+    title: 'Product Owner',
     icon: 'briefcase',
     event: 'career-weaverse',
     details: () => {
       return (
         <ul className="[&>li]:my-2 [&>li]:pl-0">
           <li>
-            Building a smart{' '}
-            <a target="_blank" rel="noopener noreferrer" href="https://weaverse.io/demo">
+           Proficient in Identity and Access Management, adept at fulfilling stakeholder
+            expectations and delivering results in an agile manner with a diverse team,independently
+            {/* <a target="_blank" rel="noopener noreferrer" href="https://airbus.com">
               Shopify Hydrogen Theme Customizer
             </a>{' '}
             to help creators build their own high quality and high performance headless storefronts
-            easily.
+            easily. */}
           </li>
         </ul>
       )
     },
   },
   {
-    org: 'FoxEcom',
-    url: 'https://foxecom.com/',
-    logo: '/static/images/foxecom-logo.jpeg',
-    start: 'May 2021',
-    end: 'Feb 2022',
-    title: 'Senior Software Engineer',
+    org: 'Airbus',
+    url: 'https://airbus.com/',
+    logo: '/static/images/airbus-logo.png',
+    start: 'Apr 2020',
+    end: 'Mar 2022',
+    title: 'Software Engineer',
     icon: 'man-technologist',
     event: 'career-foxecom',
     details: () => {
       return (
         <ul className="[&>li]:my-2 [&>li]:pl-0">
           <li>
-            Built{' '}
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://themeforest.net/item/minimog-the-high-converting-shopify-theme/33380968"
-            >
-              Minimog
-            </a>{' '}
-            - a multipurpose Shopify Theme (top best selling templates on Envato Market)
+          Acted as liaison between stakeholders and development team by solving user
+          Identity Access & Management problems by developing scalable products
           </li>
           <li>
+          Involved in designing/migrating and implementing scalable solutions and
+          transformation of IAM products
+          </li>
+          {/* <li>
             Built{' '}
             <a
               target="_blank"
@@ -63,132 +61,87 @@ const EXPERIENCES = [
               Fox Kit Shopify App
             </a>{' '}
             - The upsells and boost conversion tool built to support Minimog theme
-          </li>
+          </li> */}
         </ul>
       )
     },
   },
   {
-    org: 'Coc Coc',
-    url: 'https://coccoc.com/en',
-    logo: '/static/images/coc-coc-logo.png',
-    start: 'May 2020',
-    end: 'Apr 2021',
-    title: 'Frontend Engineer',
+    org: 'Alten',
+    url: 'https://alten.com',
+    logo: '/static/images/alten-logo.png',
+    start: 'Aug 2018',
+    end: 'Mar 2020',
+    title: 'Senior Software Engineer',
     icon: 'man-technologist',
     event: 'career-coc-coc',
     details: () => {
       return (
         <ul className="[&>li]:my-2 [&>li]:pl-0">
           <li>
-            Working on the <strong>#1 web browser & search engine</strong> in{' '}
-            <strong>Viet Nam</strong> (30M+ users)
+          Led .net core and angular development initiative as Subject Matter Expert and
+          primary point-of-contact for project management staf
           </li>
           <li>
-            Built{' '}
-            <a target="_blank" rel="noopener noreferrer" href="https://coccoc.com/webhp">
-              Coc Coc's newsfeed
-            </a>
-          </li>
-          <li>Maintained and optimized new tab's widgets and performance</li>
+          Worked closely with business stack holder and product owner to understand
+          requirements and provide exceptional realistic service</li>
         </ul>
       )
     },
   },
   {
-    org: 'BraveBits',
-    url: 'https://bravebits.co/',
-    logo: '/static/images/bb-logo.png',
+    org: 'Scientific Games India Pvt Ltd',
+    url: 'https://www.scientificgames.com/',
+    logo: '/static/images/sg-logo.jpg',
     start: 'Aug 2018',
-    end: 'Apr 2020',
+    end: 'Oct 2026',
     title: 'Fullstack Developer',
     icon: 'man-technologist',
     event: 'career-bravebits',
     details: () => {
       return (
         <ul className="[&>li]:my-2 [&>li]:pl-0">
-          <li>Working on the #1 Page Builder app on Shopify app store</li>
-          <li>Built Pagefly's Analytics APIs</li>
-          <li>
-            Built{' '}
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://github.com/sellersmith/slider-x"
-            >
-              Slider-x
-            </a>
-          </li>
+          <li>Collaborated with cross-functional development team members to analyze potential
+          system solutions based on evolving client requirements. </li>         
         </ul>
       )
     },
   },
   {
-    org: 'MindX - Technology School',
-    url: 'https://mindx.edu.vn/',
-    logo: '/static/images/mindx-logo.jpeg',
-    start: 'May 2017',
-    end: 'Jul 2018',
-    title: 'Instructor and Developer',
+    org: 'Tech Mahindra',
+    url: 'https://www.techmahindra.com/',
+    logo: '/static/images/tech-mahindra-logo.png',
+    start: 'Aug 2014',
+    end: 'Oct 2016',
+    title: 'Software Engineer',
     icon: 'man-technologist',
     event: 'career-mindx',
     details: () => {
       return (
         <ul className="[&>li]:my-2 [&>li]:pl-0">
           <li>
-            Built{' '}
-            <a target="_blank" rel="noopener noreferrer" href="http://lok.vn/">
-              Love of Knowledge
-            </a>{' '}
-            (Front-end Developer)
-          </li>
-          <li>
-            Built{' '}
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://hta218.github.io/get-a-room-api-docs/"
-            >
-              Room Finder APIs
-            </a>{' '}
-            (Back-end Developer)
-          </li>
-          <li>
-            Built{' '}
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://github.com/hta218/Travel_Egypt"
-            >
-              Travel Egypt
-            </a>{' '}
-            - a picture puzzle game made by pygame (Python)
-          </li>
-          <li>Mentored Python fundamentals and Python web development for newbies</li>
+          Researched, designed and implemented scalable applications for information
+          identification, extraction, analysis, retrieval and indexing. 
+          </li>          
         </ul>
       )
     },
   },
   {
-    org: 'Hanoi University of Science and Technology',
-    url: 'https://www.hust.edu.vn/en/',
-    logo: '/static/images/hust-logo.png',
-    start: 'Sep 2013',
-    end: 'Feb 2019',
-    title: 'Student at SEEE (School of Electrical & Electronic Engineering)',
+    org: 'Dr. Ambedkar Institute of Technology',
+    url: 'https://drait.edu.in/',
+    logo: '/static/images/ait-logo.jpg',
+    start: 'Oct 2010',
+    end: 'June 2014',
+    title: 'Bachelor of Engineering - Computer Science',
     icon: 'man-student',
     event: 'career-hust',
     details: () => {
       return (
         <ul className="[&>li]:my-2 [&>li]:pl-0">
           <li>
-            Get a good degree at <strong>School of Electrical & Electronic Engineering</strong>
-          </li>
-          <li>
-            And yeah! My major subject was <strong>Electronics and Telecommunications</strong>, but
-            I couldn't find interest in that field. So I learned Software Engineering instead, and
-            became what I am today.
-          </li>
+            Get a good degree at <strong>Computer Science</strong>
+          </li>          
         </ul>
       )
     },

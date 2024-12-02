@@ -6,10 +6,10 @@ export const PROJECTS: Project[] = [
     title: 'Weaverse Hydrogen Customizer',
     description: `The first Hydrogen-driven website builder powered by AI. Weaverse is a Shopify sales channel that allows you to create a website in minutes with no coding required.`,
     imgSrc: '/static/images/weaverse-logo.png',
-    url: 'https://www.weaverse.io?ref=kshameed7.dev',
+    url: 'https://www.airbus.com',
     builtWith: ['Shopify', 'Remix', 'TailwindCSS', 'Prisma', 'OpenAI'],
     links: [
-      { title: 'Website', url: 'https://www.weaverse.io?ref=kshameed7.dev' },
+      { title: 'Website', url: 'https://www.airbus.com' },
       { title: 'GitHub Org', url: 'https://github.com/weaverse' },
     ],
   },
@@ -29,7 +29,7 @@ export const PROJECTS: Project[] = [
       'The first Hydrogen-driven theme for Shopify. Pilot is a Shopify theme that allows you to build a lightning-fast storefront with all the benefits of Hydrogen.',
     imgSrc: '/static/images/theme-100.png',
     repo: 'weaverse/pilot',
-    url: 'https://pilot.weaverse.io/',
+    url: 'https://airbus.com/',
     builtWith: ['Hydrogen', 'Remix', 'TailwindCSS', 'HeadlessUI'],
   },
   {
