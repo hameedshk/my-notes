@@ -4,7 +4,7 @@ A blogging website
 
 ## Dev command 
 
-npnm dev 
+npnm dev or npm start
 
 
 ## lint fix
