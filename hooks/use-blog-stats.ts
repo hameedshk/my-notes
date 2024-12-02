@@ -3,7 +3,7 @@ import useSWRMutation from 'swr/mutation'
 import type { SelectStats, StatsType } from '~/db/schema'
 import { fetcher } from '~/utils/misc'
 
-export function useBlogStats(type: StatsType, slug: string) {
+/*export function useBlogStats(type: StatsType, slug: string) {
   let { data, isLoading } = useSWR<SelectStats>(`/api/stats?slug=${slug}&type=${type}`, fetcher, {
     revalidateIfStale: false,
     revalidateOnFocus: false,
@@ -20,9 +20,9 @@ export function useBlogStats(type: StatsType, slug: string) {
     bullseyes: bullseyes || 0,
   }
   return [stats, isLoading] as const
-}
+}*/
 
-export function useUpdateBlogStats() {
+/*export function useUpdateBlogStats() {
   let { trigger } = useSWRMutation(
     '/api/stats',
     async (url: string, { arg }: { arg: Partial<SelectStats> }) => {
@@ -33,4 +33,4 @@ export function useUpdateBlogStats() {
     }
   )
   return trigger
-}
+}*/
