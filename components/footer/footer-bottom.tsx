@@ -3,7 +3,7 @@ import { AreaChart, Rss } from 'lucide-react'
 import { Link } from '~/components/ui/link'
 import { SpotifyNowPlaying } from '~/components/ui/now-playing'
 import { SITE_METADATA } from '~/data/site-metadata'
-import MadeInVietNam from '~/icons/miv.svg'
+import MadeInIndia from '~/icons/miv.svg'
 
 export function FooterBottom() {
   return (
@@ -21,8 +21,8 @@ export function FooterBottom() {
       /> */}
       <div className="flex items-center">
         <Link href={SITE_METADATA.siteRepo}>
-          <span data-umami-event="made-in-vietnam">
-            <MadeInVietNam />
+          <span data-umami-event="made-in-india">
+            <MadeInIndia />
           </span>
         </Link>
         {/* <span className="mx-2.5 text-gray-400">|</span>

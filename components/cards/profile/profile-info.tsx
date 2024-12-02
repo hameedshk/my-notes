@@ -2,7 +2,9 @@ import { SITE_METADATA } from '~/data/site-metadata'
 import { BriefcaseBusiness, Github, Linkedin, Mail, MapPin } from 'lucide-react'
 import { Fragment } from 'react'
 import XIcon from '~/icons/x.svg'
+import { Image, Zoom } from '~/components/ui/image'
 import { Twemoji } from '~/components/ui/twemoji'
+import MadeInIndia from '~/icons/miv.svg'
 
 function getAccountHandle(url = '') {
   let lastPart = url.split('/').pop()
@@ -60,10 +62,10 @@ export function ProfileCardInfo() {
           <MapPin strokeWidth={1.5} size={20} />
           <p className="px-2">
            Bengaluru, India
-            <span className="absolute ml-1 inline-flex pt-px">
-              <Twemoji emoji="flag-vietnam" />
+            <span className="absolute ml-1 inline-flex pt-px">           
             </span>
           </p>
+          <MadeInIndia/>
         </div>
         <div className="flex items-center text-gray-700 dark:text-gray-200">
           <Mail strokeWidth={1.5} size={20} />

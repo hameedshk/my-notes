@@ -157,7 +157,7 @@ export function AuthorLayout({ children }: Props) {
                 </ul>
               </div>
             </div> */}
-            <div>
+            {/* <div> 
               <h2>Assets</h2>
               <p>
                 Most of the images in my blog are from{' '}
@@ -177,7 +177,7 @@ export function AuthorLayout({ children }: Props) {
               <p>
                 Thanks for the free resources <Twemoji emoji="folded-hands" />.
               </p>
-            </div>
+            </div>*/}
             <div>
               <h2>Contact</h2>
               <p>
@@ -187,7 +187,7 @@ export function AuthorLayout({ children }: Props) {
               </p>
               <SocialAccounts />
             </div>
-            <div>
+            {/* <div> 
               <h2>Support</h2>
               <p>If you appreciate my work, consider supporting me:</p>
               <div className="flex flex-col gap-4">
@@ -231,7 +231,7 @@ export function AuthorLayout({ children }: Props) {
                   />
                 </a>
               </div>
-            </div>
+            </div>*/}
           </div>
         </div>
       </div>
