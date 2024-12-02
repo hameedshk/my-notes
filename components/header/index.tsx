@@ -27,8 +27,7 @@ function logASCIItext() {
      ######   ##    ##  ##    ## 
 `
   )
-  console.log('🧑‍💻 View source:', SITE_METADATA.siteRepo)
-  console.log(`🙌 Let's connect:`, SITE_METADATA.x)
+  console.log(`🙌 Let's connect:`, SITE_METADATA.linkedin)
   logged = true
 }
 
@@ -62,7 +61,7 @@ export function Header() {
                 </Link>
               )
             })}
-            <MoreLinks />
+            {/* <MoreLinks /> */}
           </div>
           <div
             data-orientation="vertical"
