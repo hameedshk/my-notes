@@ -11,7 +11,7 @@ import { fetcher } from '~/utils/misc'
 
 const TIME_IS = 'https://time.is/India'
 const MY_TIMEZONE = 'Asia/Kolkata'
-const MY_TIMEZONE_OFFSET = 5 * -60 // UTC+7
+const MY_TIMEZONE_OFFSET = 5.5 * -60 // UTC+7
 
 function getTime() {
   let date = new Date()
@@ -56,7 +56,7 @@ export function FooterMeta() {
       <div className="flex items-center gap-2">
         <Map className="h-5 w-5" />
         <span className="font-medium">
-          Bengaluru - India, <Twemoji emoji="flag-vietnam" className="!h-4.5" />
+          Bengaluru - India, <Twemoji emoji="flag-india" className="!h-4.5" />
         </span>
       </div>
       <div className="flex items-center gap-2">
