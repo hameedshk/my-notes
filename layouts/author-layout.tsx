@@ -48,7 +48,7 @@ export function AuthorLayout({ children }: Props) {
               To Share: Insights, lessons, and strategies I’ve gathered while navigating the intersection of tech and product.
               <p>
                 I would greatly appreciate any comments and thoughts on my posts{' '}
-                <Twemoji emoji="clinking-beer-mugs" />.
+                <Twemoji emoji="sparkles" />.
               </p>
             </div>
             <div>

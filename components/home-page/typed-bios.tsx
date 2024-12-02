@@ -49,11 +49,8 @@ export function TypedBios() {
         {/* <li>I was born in the beautiful Moc Chau plateau.</li> */}
         <li>My first programming language I learned was C.</li>
         <li>I love Web development & Product Management.</li>
-        <li>I'm focusing on Product management.</li>
-        <li>
-          I'm a dog-person. <Twemoji emoji="dog" />
-        </li>
-        <li>
+        <li>I'm focusing on Product management.</li>       
+        {/* <li>
           I'm a sport-guy. I love
           <span className="ml-1">
             <Twemoji emoji="soccer-ball" />,
@@ -73,7 +70,7 @@ export function TypedBios() {
         </li>
         <li>
           I love playing video games, PES is my favorite one. <Twemoji emoji="video-game" />.
-        </li>
+        </li> */}
       </ul>
       <span ref={el} className="text-neutral-900 dark:text-neutral-200" />
     </div>

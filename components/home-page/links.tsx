@@ -4,24 +4,24 @@ import { GrowingUnderline } from '~/components/ui/growing-underline'
 import { SITE_METADATA } from '~/data/site-metadata'
 
 const LINKS = [
-  {
+  /*{
     title: `What have I built?`,
     href: `/projects`,
     emoji: 'man-technologist',
     event: 'home-link-projects',
-  },
+  },*/
   {
     title: `My writings`,
     href: `/blog`,
     emoji: 'memo',
     event: 'home-link-blog',
   },
-  {
+  /*{
     title: `Snippets collection`,
     href: `/snippets`,
     emoji: 'dna',
     event: 'home-link-snippets',
-  },
+  },*/
   {
     title: `About me & this blog`,
     href: `/about`,
@@ -33,7 +33,7 @@ const LINKS = [
     href: SITE_METADATA.analytics.umamiAnalytics.shareUrl,
     emoji: 'bar-chart',
     event: 'home-link-analytics',
-  },
+  }
 ]
 
 export function BlogLinks() {
