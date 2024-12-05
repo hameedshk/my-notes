@@ -4,6 +4,7 @@ import { Link } from '~/components/ui/link'
 import { SpotifyNowPlaying } from '~/components/ui/now-playing'
 import { SITE_METADATA } from '~/data/site-metadata'
 import MadeInIndia from '~/icons/miv.svg'
+import { Twemoji } from '../ui/twemoji'
 
 export function FooterBottom() {
   return (
@@ -20,11 +21,12 @@ export function FooterBottom() {
         showCover
       /> */}
       <div className="flex items-center">
-        <Link href={SITE_METADATA.siteRepo}>
+        {/* <Link href={SITE_METADATA.siteRepo}> */}
           <span data-umami-event="made-in-india">
-            <MadeInIndia />
+            <h1 className="absolute ml-1.5 inline-flex pt-[3px]">Made In India <Twemoji emoji="flag-india" />
+            </h1>
           </span>
-        </Link>
+        {/* </Link> */}
         {/* <span className="mx-2.5 text-gray-400">|</span>
         <Link href="/feed.xml" aria-label="RSS Feed" data-umami-event="rss-feed" prefetch={false}>
           <Rss strokeWidth={1.5} size={20} />

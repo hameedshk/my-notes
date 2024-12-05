@@ -7,7 +7,7 @@ export const SITE_METADATA = {
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://www.hameedshk.github.io/my-notes',
-  siteRepo: 'https://hameedshk.github.io/my-notes',
+  siteRepo: 'https://github.com/my-notes/my-notes/',
   siteLogo: `${process.env.BASE_PATH || ''}/static/images/logo.jpg`,
   socialBanner: `${process.env.BASE_PATH || ''}/static/images/twitter-card.jpeg`,
   email: 'kshameed7@gmail.com',
