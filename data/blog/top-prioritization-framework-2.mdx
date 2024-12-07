@@ -85,7 +85,7 @@ Example:Imagine you’re a Product Manager
 
 ###  6.Cost Of Delay
 
-**Cost of Delay (CoD)** helps to quantify the economic impact of delaying a project or feature. It helps prioritize work by focusing not just on the value of delivering something, but also on the cost of not delivering it in a timely manner.
+**Cost of Delay (CoD)** It measures the financial (economic impact)or opportunity loss caused by delaying the delivery of delaying a project or feature. It helps prioritize work by focusing not just on the value of delivering something, but also on the cost of not delivering it in a timely manner.
 
 **Key Concepts**
 
@@ -147,28 +147,56 @@ Here's a diagram illustrating the concept of Cost of Delay over time.
 
 This visual helps to understand that the longer a valuable feature is delayed, the more potential value is lost, emphasizing the importance of timely delivery. ​​
 
-Example:Imagine you have two features:
+**Scenario : E-commerce Platform's Holiday Season Sale**
 
-- Feature A: Expected to generate $50,000/month once released.
-- Feature B: Expected to generate $30,000/month, but its value drops by $10,000 every month it's delayed.
+An e-commerce platform is planning a feature to enable personalized product recommendations during its holiday season sale. The feature is estimated to increase sales by 10% due to better user engagement.
 
-If Feature A takes 2 months to build, delaying it by 1 month results in a cost of delay of $50,000.
+**Cost of Delay Calculation:**
 
-For Feature B, delaying it by 1 month costs $10,000 , but if delayed by 2 months, the cost is $20,000.
+Feature implementation time: **4 weeks**
 
-Using Cost of Delay
+Revenue generated per day during the holiday season: **₹10,00,000**
+
+Expected revenue increase due to the feature: **10% or ₹1,00,000/day**
+
+Duration of the holiday season: **30 days**
+
+- Economic Value = Total expected monetary value the feature generates= 30 days * 1,00,000 = **₹30,00,000**
+
+- Time Sensitivity = A number between 0 and 1 indicating how critical the feature's timing is.
+1 means **high urgency** (e.g., features for a holiday sale). 
+0.5 or lower for less time-critical features= **1**
+- Fraction of Delay = 
+<math><mfrac><mi>Days of Delay</mi> 
+<mi>Total Duration for Value</mi></mfrac></math>=
+<math><mfrac><mi>7</mi>
+<mi>30</mi></mfrac></math>
+
+```javascript
+COD = Economic Value * Time sensitivity * Duration of Delay
+
+COD = ₹1,00,000 * 1 * 7 days = ₹7,00,000 
+```
+If the team delays the feature launch by just 1 week, the platform loses **₹7,00,000** in potential revenue.
+
+Prioritization Decision:
+
+1. If this feature has a high CoD (₹7,00,000 in just 1 week), it’s clear that it should take priority over less urgent tasks with lower financial or strategic impact.
+
+2. Focus the team on delivering the personalized recommendation feature by reallocating resources.
 
 To effectively use CoD:
-Estimate the economic impact: Determine the value of delivering the feature or project on time.
-Understand time sensitivity: Evaluate how quickly the value decreases with delay.
-Apply WSJF if necessary: Use the WSJF method to combine CoD with job duration for more nuanced prioritization.
-Conclusion
-Cost of Delay is a powerful tool that helps organizations focus on delivering value at the right time by considering the economic impact of delays. It aligns the team's priorities with business objectives, ensuring that the most time-sensitive and valuable work is prioritized
 
-## Conclusion
+- **Estimate the economic impact:** Determine the value of delivering the feature or project on time.
 
-- Understanding and effectively utilizing modules in **NestJS** is essential for building **scalable and maintainable** applications.
-- Whether organizing feature-specific code, sharing providers, optimizing global functionality, or dynamically configuring modules, **NestJS** modules offer a robust foundation for application development.
+- **Understand time sensitivity:** Evaluate how quickly the value decreases with delay.
+
+- **Apply WSJF if necessary:** Use the WSJF method to combine CoD with job duration for more nuanced prioritization.
+
+**Conclusion**
+
+Cost of Delay is a powerful tool that helps organizations focus on delivering value at the right time by considering the economic impact of delays. It aligns the team's priorities with business objectives, ensuring that the most time-sensitive and valuable work is prioritized.
+
 
 ## References
 
