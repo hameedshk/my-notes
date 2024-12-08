@@ -21,62 +21,39 @@ authors: ['default']
 `SLA` stands for service level agreement. It refers to a document that outlines a commitment between a service provider and a client, including details of the service, the standards the provider must adhere to, and the metrics to measure the performance.
 
 
-`Incident management objectives `
+### `Incident management objectives `
 1. Restore Service as Quickly as Possible
 2. Minimize Impact and Downtime
 3. Meeting SLA’s provided by the organization ,internal or external org i.e SLA’s set by client
 4. Client & customer satisfaction 
 5. Improvement in the Business productivity 
 
-`Inputs to Incident management`
+### `Inputs to Incident management`
 - Phone call 
 - Web tool like snow(ServiceNOW) ,hp service center ,BSM remedy  or email etc
 - Incident can come from client or supplier 
 
-`Incident management process activities`: It completely depends from organization to organization. A typical process activities but not limited to
+### `Incident management process activities`: 
+It completely depends from organization to organization. A typical process activities but not limited to
 
 | **Step**        | **Activity**                                                            | Example
 |----------------------|------------------------------------------------------------------------|----------------------|
 |**Incident Identification** |  The first step in incident management is identifying that an incident has occurred. This can be through various channels like automated monitoring tools, user reports, or proactive checks.|A network monitoring system detects a server outage, or a user reports an issue with a particular software application.
 |**Incident Logging** | Once an incident is identified, it should be logged in the **Incident Management System (IMS)** or helpdesk tool. This log should contain all relevant details, including the incident description, the time of occurrence, the user reporting the issue, and the severity.|An IT support team logs a ticket detailing the affected service, impact, and priority level.
 |**Incident Categorization** | After logging, the incident is categorized based on the type of service or system impacted (e.g., network, hardware, software). This helps in determining the severity, appropriate resources, and response protocols. | Categorizing an incident as "Application Crash" or "Network Connectivity Issue" helps prioritize and route it to the appropriate team.
-A prioritization framework focusing on Reach, Impact, Confidence, and Effort. |
-|A strategic management framework that helps in building startup business models. |
-|A prioritization tool that categorizes tasks into urgent and important to help decide what to focus on, delegate, or eliminate. |
-| [Cost of Delay](top-prioritization-framework-2#6cost-of-delay) | A measure of the financial or opportunity loss incurred when a task or feature is delayed, helping prioritize work by value.        |
+|**Incident Prioritization** | Incidents need to be prioritized based on their impact and urgency. The priority determines the order in which incidents are addressed. Critical incidents affecting a large number of users or business-critical systems should be handled first. | A system-wide outage that affects multiple departments might be prioritized higher than a single user's issue with a minor application.
+|**Incident Diagnosis** | The support team or the designated personnel investigates and diagnoses the root cause of the incident. This may involve gathering more information, troubleshooting, or replicating the issue. | If a website is down, the team may check the server logs, perform network diagnostics, or verify DNS settings.
+|**Incident Escalation** | If the issue cannot be resolved at the initial support level, it may need to be escalated to higher levels (L2, L3, or specialized teams). This escalation ensures that the incident is handled by personnel with the expertise to resolve the issue. | If a Level 1 support agent cannot resolve a complex database issue, the incident is escalated to a Level 2 or database expert.
+|**Incident Resolution** | Once the root cause is identified, a resolution is implemented to restore the affected service. This could involve restarting services, applying patches, reconfiguring systems, or providing workarounds. | After identifying a malfunctioning software update, a rollback might be performed to restore the system to its previous functional state.
+|**Incident Recovery** | This involves ensuring that the service is fully restored and functional. After resolution, the incident is monitored to ensure that the solution has worked and that there are no further issues. | After resolving a server crash, the team may monitor system performance to confirm the issue is fully resolved and that there are no lingering problems.
+|**Incident Closure** | Once the incident is resolved and the service is restored, the incident is formally closed. The closure should include a final summary, any notes on the resolution, and verification that the affected user(s) or department is satisfied with the outcome. |The helpdesk closes the ticket once the issue is resolved, notifying the user that the incident has been addressed.
+|**Post-Incident Review (Optional but Recommended)** | After the incident is closed, a post-incident review (PIR) is conducted. This helps in analyzing the cause of the incident, evaluating the response, and identifying any improvements or preventive measures. |A review might show that a particular issue occurred due to a lack of monitoring, leading to recommendations for system upgrades or better alerting mechanisms.
+|**Incident Documentation** | Throughout the process, all actions, decisions, and communications related to the incident should be well-documented. This creates an audit trail and helps in knowledge sharing for future incidents. |Maintaining detailed records of incident tickets, including time logs, resolution steps, and outcomes, is crucial for compliance and knowledge base creation.
+|**Communication and Notification** | Keeping stakeholders informed about the status of the incident throughout the process is vital. This includes providing updates to affected users, departments, or customers.|IT support teams send periodic updates to users, notifying them of ongoing resolutions or expected timelines for fixes.
+|**Continuous Improvement** | Following the incident, teams should reflect on the handling process, identify any bottlenecks, and incorporate improvements into the incident management process to better handle future incidents.|After resolving multiple incidents of a similar nature, the organization may implement proactive monitoring or change its process to reduce future incidents.
 
-1. Log
+![Incident management process activities](/static/images/blogs/incident-mgt-workflow.png)
 
-2. Categorize
-
-3. Prioritize 
-
-4. Diagnose 
-
-5. Resolve and Communication 
-
-Or 
-
-
-1. Identification 
-
-2. log 
-
-3. categorize
-
-4. prioritize 
-
-5. diagnose the location of incident to right resolver group
-
-6. if not resolve then escalate
-
-7. pushing people to restore
-
-8. communicate to the user
-
-9. update the knowledge base 
-
-10. close 
 
 **Scope of Incident management -** understand define scope of IT service in the organization 
 
