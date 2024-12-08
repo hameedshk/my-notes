@@ -3,7 +3,7 @@ export const SITE_METADATA = {
   author: 'Hameed Syed K',
   headerTitle: `Hameed's dev blog`,
   description:
-    'A personal space on the digital world where I document my programming & Product management journey, sharing lessons, insights, and resources for fellow developers.',
+    'A personal space on the digital world where I document my programming & Product management journey, sharing lessons, insights, expereince and resources for fellow developers.',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://www.hameedshk.github.io/my-notes',
