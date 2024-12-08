@@ -5,10 +5,8 @@ lastmod: '2024-10-21'
 tags: ['product', 'feature']
 summary: 'In the first part of our (Top Prioritization Framework-1)[https://hameedshk.github.io/blog/top-prioritization-framework-2] series, we covered the most applied framework. Now, let’s dive deep into the remaining frameworks.'
 images: ['/static/images/blogs/feature-prioritization-2.webp']
-layout: PostSimple
+authors: ['default']
 ---
-
-![brain storming professionals](/static/images/blogs/feature-prioritization-2.webp)
 
 ## Introduction
 
@@ -112,18 +110,16 @@ However, in many practical applications, teams use simpler approaches:
 
 1. **Simple Numerical CoD:**
 
-- Assign a dollar value to the potential revenue or cost savings a feature would generate.
-- Estimate how much value is lost per time unit (e.g., per week or month) if the feature is delayed.
+  - Assign a dollar value to the potential revenue or cost savings a feature would generate.
+  - Estimate how much value is lost per time unit (e.g., per week or month) if the feature is delayed.
 
-2. **Weighted Shortest Job First (WSJF):**
+2. **Weighted Shortest Job First (WSJF):** WSJF is a prioritization method used in Agile to help teams determine the order in which to work on features or tasks.
 
-- WSJF is a prioritization technique that uses CoD divided by the job duration (or effort).
-
-```javascript
+ ```javascript
 WSJF = Cost of Delay / Job Duration
 ```
 
-- Prioritize the work with the highest WSJF score, meaning it provides the most value in the shortest time.
+- Prioritize the work with the highest WSJF score, meaning it provides the most value in the shortest time or with less effort.
 
 **Types of Cost of Delay**
 
@@ -149,7 +145,7 @@ This visual helps to understand that the longer a valuable feature is delayed, t
 
 **Scenario : E-commerce Platform's Holiday Season Sale**
 
-An e-commerce platform is planning a feature to enable personalized product recommendations during its holiday season sale. The feature is estimated to increase sales by 10% due to better user engagement.
+_An e-commerce platform is planning a feature to enable personalized product recommendations during its holiday season sale. The feature is estimated to increase sales by 10% due to better user engagement._
 
 **Cost of Delay Calculation:**
 
@@ -168,7 +164,7 @@ Duration of the holiday season: **30 days**
 0.5 or lower for less time-critical features= **1**
 - Fraction of Delay = 
 <math><mfrac><mi>Days of Delay</mi> 
-<mi>Total Duration for Value</mi></mfrac></math>=
+<mi>Total Duration for Value</mi></mfrac></math> =
 <math><mfrac><mi>7</mi>
 <mi>30</mi></mfrac></math>
 
@@ -179,11 +175,78 @@ COD = ₹1,00,000 * 1 * 7 days = ₹7,00,000
 ```
 If the team delays the feature launch by just 1 week, the platform loses **₹7,00,000** in potential revenue.
 
-Prioritization Decision:
+**Prioritization Decision**
 
-1. If this feature has a high CoD (₹7,00,000 in just 1 week), it’s clear that it should take priority over less urgent tasks with lower financial or strategic impact.
+1. Continue working on lower-value maintenance tasks (e.g., bug fixes with no direct revenue impact).
+
+- Cost of Delay: ₹7,00,000 for every week of delay.
 
 2. Focus the team on delivering the personalized recommendation feature by reallocating resources.
+
+- This avoids the significant CoD and maximizes revenue during the critical sale period.
+
+**Scenario: Prioritizing Features for an E-Commerce App**
+
+_You are a Product Owner for an e-commerce platform, and your development team has a few upcoming tasks. These tasks need to be prioritized for the next sprint, but the challenge is that there’s limited development capacity. You want to maximize business value while considering the effort required for each task._
+
+**Upcoming Tasks:**
+
+1. __Task 1: Search Functionality Improvement__
+    - Cost of Delay (CoD): ₹50,00,000 (High impact on revenue because a better search experience can drive more sales and improve user engagement.)
+    - Effort: 7 days of development effort.
+
+2. __Task 2: Bug Fix for Checkout Process__
+    - Cost of Delay (CoD): ₹1,00,00,000 (Very critical bug that directly impacts revenue, as users can't complete purchases.)
+    - Effort: 2 days of development effort.
+
+3. __Task 3: Wishlist Feature__
+    - Cost of Delay (CoD): ₹30,00,000 (Medium impact. Users often add items to wishlists, but it’s not as crucial as the checkout process.)
+    - Effort: 5 days of development effort.
+
+4. __Task 4: Payment Gateway Integration (New Option)__
+    - Cost of Delay (CoD): ₹40,00,000 (Important, but not as urgent as fixing checkout issues.)
+    - Effort: 6 days of development effort.
+
+**Step 1: Calculate WSJF for Each Task**
+
+  - use the formula WSJF =<math><mfrac><mi>Cost of Delay</mi> <mi>Effort</mi></mfrac></math>
+
+1. **Task 1: Search Functionality Improvement**
+
+  - WSJF =<math><mfrac><mi>₹50,00,000</mi> 
+<mi>7</mi></mfrac></math> = ₹7,14,285.71
+
+2. **Task 2: Bug Fix for Checkout Process**
+
+  - WSJF =<math><mfrac><mi>₹1,00,00,000</mi> 
+<mi>2</mi></mfrac></math> = ₹50,00,000
+
+3. **Task 3: Wishlist Feature**
+
+- WSJF =<math><mfrac><mi>₹30,00,000</mi> 
+<mi>5</mi></mfrac></math> = ₹6,00,000
+
+4. **Task 4: Payment Gateway Integration**
+
+- WSJF =<math><mfrac><mi>₹40,00,000</mi> 
+<mi>6</mi></mfrac></math> = ₹6,66,666.67
+
+**Step 2: Prioritize**
+
+- The Task with the highest WSJF score should be prioritized first.
+  - **Task 2** (Bug Fix for Checkout Process) has the highest WSJF of ₹50,00,000. This task is crucial because it directly affects revenue by preventing purchases, so it must be prioritized first.
+  - **Task 1** (Search Functionality Improvement) comes next, with a WSJF of ₹7,14,285.71. It has a high impact on sales, so it should follow.
+  - **Task 4 **(Payment Gateway Integration) should come next, with a WSJF of ₹6,66,666.67.
+  - **Task 3** (Wishlist Feature) has the lowest WSJF of ₹6,00,000, so it will be the last feature worked on.
+
+**Step 3: Final Priority Order (based on WSJF):**
+  - **Task 2** – Bug Fix for Checkout Process (₹50,00,000 CoD, 2 days effort)
+  - **Task 1** – Search Functionality Improvement (₹50,00,000 CoD, 7 days effort)
+  - **Task 4** – Payment Gateway Integration (₹40,00,000 CoD, 6 days effort)
+  - **Task 3** – Wishlist Feature (₹30,00,000 CoD, 5 days effort)
+
+>In real-world product development, teams often have limited resources (time, developers, etc.), and prioritizing tasks based on business impact and effort is crucial. WSJF helps the team focus on delivering the most value with the least effort, optimizing the overall return on investment.
+
 
 To effectively use CoD:
 
