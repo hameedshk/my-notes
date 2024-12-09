@@ -10,15 +10,15 @@ authors: ['default']
 
 ## Introduction
 
-`What is an incident?` **Incident** is any interruption or disruption to normal IT services .
+`What is an incident?` **Incident** is any interruption or disruption to normal IT services.
 
-`IT services` : It is where you have the network services ,systems ,applications ,voice ,database as well as end user support related services .
+`IT services` : It is where you have the network services ,systems ,applications ,voice ,database as well as end user support related services.
 
 `Examples of Incidents` - Router down ,database down , Payroll service down and issues reported reported by users ,non IT or IT users.
 
 `Incident management` - The Prime service of incident management is to restore the services as soon as possible to reduce the business impact and improve the productivity of any IT services incident that need to be restored.
 
-`SLA` stands for service level agreement. It refers to a document that outlines a commitment between a service provider and a client, including details of the service, the standards the provider must adhere to, and the metrics to measure the performance.
+`SLA` stands for service level agreement.It refers to a document that outlines a commitment between a service provider and a client, including details of the service, the standards the provider must adhere to, and the metrics to measure the performance.
 
 
 ## Objectives
@@ -34,14 +34,14 @@ __Inputs__
 - Incident can come from client or supplier 
 
 ## Process activities
-It completely depends from organization to organization. A typical process activities but not limited to
+It completely depends from organization to organization.A typical process activities includes but not limited to
 
 | **Step**        | **Activity**                                                            | Example
 |----------------------|------------------------------------------------------------------------|----------------------|
-|**Incident Identification** |  The first step in incident management is identifying that an incident has occurred. This can be through various channels like automated monitoring tools, user reports, or proactive checks.|A network monitoring system detects a server outage, or a user reports an issue with a particular software application.
-|**Incident Logging** | Once an incident is identified, it should be logged in the **Incident Management System (IMS)** or helpdesk tool. This log should contain all relevant details, including the incident description, the time of occurrence, the user reporting the issue, and the severity.|An IT support team logs a ticket detailing the affected service, impact, and priority level.
-|**Incident Categorization** | After logging, the incident is categorized based on the type of service or system impacted (e.g., network, hardware, software). This helps in determining the severity, appropriate resources, and response protocols. | Categorizing an incident as "Application Crash" or "Network Connectivity Issue" helps prioritize and route it to the appropriate team.
-|**Incident Prioritization** | Incidents need to be prioritized based on their impact and urgency. The priority determines the order in which incidents are addressed. Critical incidents affecting a large number of users or business-critical systems should be handled first. | A system-wide outage that affects multiple departments might be prioritized higher than a single user's issue with a minor application.
+|**Incident Identification** |  The first step in incident management is identifying that an incident has occurred.This can be through various channels like automated monitoring tools, user reports, or proactive checks.|A network monitoring system detects a server outage, or a user reports an issue with a particular software application.
+|**Incident Logging** | Once an incident is identified, it should be logged in the **Incident Management System (IMS)** or helpdesk tool.This log should contain all relevant details, including the incident description, the time of occurrence, the user reporting the issue, and the severity.|An IT support team logs a ticket detailing the affected service, impact, and priority level in tools like ServiceNOW(snow) or any similar tools.
+|**Incident Categorization** | After logging, the incident is categorized based on the type of service or system impacted (e.g., network, hardware, software).This helps in determining the severity, appropriate resources, and response protocols.| Categorizing an incident as "Application Crash" or "Network Connectivity Issue" helps prioritize and route it to the appropriate team.
+|**Incident Prioritization** | Incidents need to be prioritized based on their impact and urgency.The priority determines the order in which incidents are addressed.Critical incidents affecting a large number of users or business-critical systems should be handled first.| A system-wide outage that affects multiple departments might be prioritized higher than a single user's issue with a minor application.
 |**Incident Diagnosis** | The support team or the designated personnel investigates and diagnoses the root cause of the incident. This may involve gathering more information, troubleshooting, or replicating the issue. | If a website is down, the team may check the server logs, perform network diagnostics, or verify DNS settings.
 |**Incident Escalation** | If the issue cannot be resolved at the initial support level, it may need to be escalated to higher levels (L2, L3, or specialized teams). This escalation ensures that the incident is handled by personnel with the expertise to resolve the issue. | If a Level 1 support agent cannot resolve a complex database issue, the incident is escalated to a Level 2 or database expert.
 |**Incident Resolution** | Once the root cause is identified, a resolution is implemented to restore the affected service. This could involve restarting services, applying patches, reconfiguring systems, or providing workarounds. | After identifying a malfunctioning software update, a rollback might be performed to restore the system to its previous functional state.
@@ -52,17 +52,9 @@ It completely depends from organization to organization. A typical process activ
 |**Communication and Notification** | Keeping stakeholders informed about the status of the incident throughout the process is vital. This includes providing updates to affected users, departments, or customers.|IT support teams send periodic updates to users, notifying them of ongoing resolutions or expected timelines for fixes.
 |**Continuous Improvement** | Following the incident, teams should reflect on the handling process, identify any bottlenecks, and incorporate improvements into the incident management process to better handle future incidents.|After resolving multiple incidents of a similar nature, the organization may implement proactive monitoring or change its process to reduce future incidents.
 
-![Incident management process activities](/static/images/blogs/incident-mgt-workflow.png)
+[ Incident management process activities(/static/images/blogs/incident-mgt-workflow.png)]::
 
 ![Incident management process activities](/static/images/blogs/incident-mgt2-workflow.png)
-
-## SLA 
-Service Level Agreement is a formal contract or agreement between a service provider and a customer that defines the expected level of service. 
-It specifies measurable performance targets, responsibilities, and obligations for both parties. 
-
-__What is correlation of SLM & Incident management?__
-
-In the context of incident management, SLAs are used to ensure timely and efficient resolution of incidents while aligning service delivery with customer expectations.
 
 ## Escalation types 
 
@@ -76,9 +68,9 @@ In the context of incident management, SLAs are used to ensure timely and effici
      - **Challenges:** Can lead to slower decision-making and reduced empowerment of frontline staff.
      - **Visual Representation**:
 
-     **Junior Developer → Senior Developer**
+     `Junior Developer → Senior Developer`
 
-     **Customer Service Rep → Supervisor**
+     `Customer Service Rep → Supervisor`
 
 ### 2. **Functional Escalation**
    - **Definition**: Functional escalation involves routing an issue to a specialized team or department based on the specific function or domain related to the problem.
@@ -89,9 +81,9 @@ In the context of incident management, SLAs are used to ensure timely and effici
      - **Challenges**: Requires effective communication between functions and clear handoffs.
      - **Visual representation**
 
-       **Development Team → Testing Team**
+       `Development Team → Testing Team`
 
-       **IT Support → Network Engineering**
+       `IT Support → Network Engineering`
 
 >Remember that both hierarchical and functional escalation play crucial roles in incident management, ensuring that the right people with the right expertise are involved in resolving issues within an organization. 
 
@@ -150,7 +142,7 @@ Each level builds upon the previous one, ensuring a comprehensive support system
 
 ## Incident management KPI’s
 
-Key Performance Indicators (KPIs) are measurable values that demonstrate how effectively an individual, team, or organization is achieving objectives.KPIs can be categorized based on the area they measure
+`Key Performance Indicators` (KPIs) are measurable values that demonstrate how effectively an individual, team, or organization is achieving objectives.KPIs can be categorized based on the area they measure
 
 __Purpose of KPIs__
   * **Strategic Decision-Making**: KPIs allow management to make informed decisions by succinctly communicating results.
@@ -164,17 +156,22 @@ __Purpose of KPIs__
 
   * **Operational KPIs**: Analyze processes, segments, or geographical locations month over month (or even day over day). Used by managing staff to address questions derived from strategic KPIs.
 
-    __Example__ :__MTTR__-Mean Time to Resolve an Incident, Incident Resolution Time i.e average time to resolve reported issues etc
+    __Example__ :`MTTR` -Mean Time to Resolve an Incident, Incident Resolution Time i.e average time to resolve reported issues etc
 
   * **Customer-Focused KPIs**: Measure per-customer engagement, satisfaction, and retention.
 
-    __Example__ :__Net Promoter Score (NPS):__ Measures customer loyalty based on their likelihood to recommend your product or service , __Churn Rate__ - Percentage of customers lost over a given time.
+    __Example__ :`Net Promoter Score (NPS):` Measures customer loyalty based on their likelihood to recommend your product or service , `Churn Rate` - Percentage of customers lost over a given time.
 
   * **Process-Focused KPIs**: These KPIs measure the efficiency, quality, and effectiveness of business processes, enabling organizations to optimize operations and meet strategic objectives.
 
-    __Example__ :__First Contact Resolution Rate__ Percentage of issues resolved during the first interaction with the customer should be 80% ,95% adherence to __SLA__ terms.
+    __Example__ :`First Contact Resolution Rate` Percentage of issues resolved during the first interaction with the customer should be 80% ,95% adherence to __SLA__ terms.
+
+## Conclusion
 
 
+Incident management, emphasize its vital role in maintaining business continuity and customer satisfaction. A well-structured process ensures quick resolution, efficient resource allocation, and compliance with SLAs. Continuous improvement through monitoring KPIs and learning from past incidents is vital to any team or organization.
+
+Hence organizations must invest in robust incident management practices, ensuring resilience and adaptability in the face of challenges, while fostering a culture of proactive service excellence.
 
 
 
