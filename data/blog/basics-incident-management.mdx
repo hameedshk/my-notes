@@ -2,7 +2,7 @@
 title: 'Basics of Incident Management'
 date: '2024-05-30'
 lastmod: '2024-05-30'
-tags: ['incident',]
+tags: ['incident','SLA','L2','L3','escalation','KPI']
 summary: 'In the first part of our (Top Prioritization Framework-1)[https://hameedshk.github.io/blog/top-prioritization-framework-2] series, we covered the most applied framework. Now, let’s dive deep into the remaining frameworks.'
 images: ['/static/images/blogs/incident-detective.png']
 authors: ['default']
@@ -98,62 +98,69 @@ In the context of incident management, SLAs are used to ensure timely and effici
 
 In the context of incident management, the terms L1, L2, and L3 refer to different levels or tiers of technical support. Let’s break down what each level entails
 
-### 1. **L1 (Level 1) Support:**
-  - Role: L1 support is the initial point of contact for users experiencing technical issues. It’s often provided by the user help desk.
+### 1. **L1 Support:**
+  - Role: L1 or Level 1 support is the initial point of contact for users experiencing technical issues. It’s often provided by the user help desk.
   - Responsibilities:
      * Issue Screening: L1 personnel screen incoming issues, gather relevant information, and assess the severity.
      * Basic Troubleshooting: They handle straightforward issues that can be resolved using predefined procedures or knowledge bases.
      * User Assistance: L1 support assists users with common problems, such as password resets, software installations, and basic configuration.
   * Example: If a user can’t log in to their email account, L1 support would guide them through the steps to reset their password.
-### 2. **L2 (Level 2) Support:**
-   - Role: L2 support comes into play when issues are more complex or require deeper technical expertise.
+### 2. **L2 Support:**
+   - Role: L2 or level 2 support comes into play when issues are more complex or require deeper technical expertise.
    - Responsibilities:
      * Advanced Troubleshooting: L2 personnel analyze incidents that couldn’t be resolved at L1. They use technical knowledge to diagnose and address issues.
      * Configuration and Workarounds: L2 may perform basic configuration changes within applications or suggest workarounds.
      * Interaction with Other Teams: If necessary, L2 collaborates with other teams (e.g., development, network) to resolve incidents.
    * Example: Suppose an application is crashing due to a specific configuration.
 
-### 3. **L3 (Level 3) Support:**
-   - Role: L3 support handles the most complex and critical incidents.
+### 3. **L3 Support:**
+   - Role: L3 or level 3 support handles the most complex and critical incidents.
    - Responsibilities:
      * Code Changes and Custom Solutions: L3 personnel deal with incidents that require code modifications, custom solutions, or deep system understanding.
      * Root Cause Analysis: They identify underlying causes and address systemic issues.
      * Escalation Point: L3 serves as an escalation point for unresolved L2 incidents.
    * Example: If an application bug requires code changes or database adjustments, L3 support would handle it.
 
+Each level builds upon the previous one, ensuring a comprehensive support system.
+
 >Remember that these levels are part of a structured approach to IT support, allowing organizations to efficiently address user needs and maintain high-quality service.
 
-1. **Functional** 
+ ## Scenario of P4 incident Handling process
 
-For example ,A Server management team has L1 , L2 and L3 teams to handle incidents.
+- A Server management team has L1 , L2 and L3 teams to handle incidents.
+- **Response Time:** Updates are required every 1 hour until the incident is resolved or escalated. This ensures transparency and active monitoring.
+- **Resolution Time:** The total resolution time allowed is 8 hours. If the incident is not resolved within this period, it is marked as a breached SLA.
+- Time Allocation by Teams:
+  - **L1 Team:**
+    - Handles the incident for the first 4 hours (50% of resolution time).
+    - Tasks include initial triage, basic troubleshooting, and determining if escalation to L2 is required.
+  - **L2 Team:**
+    - Takes over for the next 4 hours if L1 cannot resolve the issue.
+    - Focuses on more advanced diagnostics and solutions.
+  - **L3 Team:**
+    - Receives the incident if it exceeds the 8-hour resolution time (100% of SLA time).
+    - These are breached incidents, requiring expert resolution and potential handling of penalties.
+  - **Penalties for Breaches: **
+    - If the incident resolution exceeds the 8-hour SLA, penalties might be applied.
+    - Penalties could include:
+      - Financial compensation to the customer (e.g., service credits).
+      - Internal consequences for failing to meet SLA compliance goals.
 
-So for P4 - response time is 120 minutes and resolution time is 480 minutes 
-
-So we give 50% of time to L1 team for P4 incident 
-
-Remaining 50% of time given to L2 team 
-
-After 100%  ,Breached SLA’s will be given to L3 team.
-
- [Each level builds upon the previous one, ensuring a comprehensive support system](https://www.infosys.com/digital/insights/Documents/application-maintenance-support.pdf)
-
-
-
-
-**Incident management KPI’s -** 
+## Incident management KPI’s
 
 A KPI is a specific metric used to evaluate performance. It provides a clear, measurable way to assess progress toward strategic, financial, or operational goals.
 
-* **Purpose of KPIs:**
+### Purpose of KPIs
   * **Strategic Decision-Making**: KPIs allow management to make informed decisions by succinctly communicating results.
-  * **Focus and Improvemen**t: They create a basis for decision-making and help focus attention on what matters most.
+  * **Focus and Improvement**: They create a basis for decision-making and help focus attention on what matters most.
   * **Performance Evaluation**: KPIs gauge output against targets, objectives, or industry peers.
-* **Categories of KPIs:**
-  * **Strategic KPIs**: High-level indicators used by executives. Examples include return on investment (ROI), profit margin, and total company revenue.
+
+### Categories of KPIs
+  * **Strategic KPIs**: High-level indicators used by executives. 
+  Examples include return on investment (ROI), profit margin, and total company revenue.
   * **Operational KPIs**: Analyze processes, segments, or geographical locations month over month (or even day over day). Used by managing staff to address questions derived from strategic KPIs.
   * **Customer-Focused KPIs**: Measure per-customer efficiency, satisfaction, and retention.
-  * [**Process-Focused KPIs**: Monitor operational performance across the organization](https://www.investopedia.com/terms/k/kpi.asp)
-
+  * **Process-Focused KPIs**: Monitor operational performance across the organization.
 
 
 Number of incidents resolved within SLA’s 
