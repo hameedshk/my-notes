@@ -12,7 +12,7 @@ authors: ['default']
 
 `What is an incident?` **Incident** is any interruption or disruption to normal IT services .
 
-`IT services` **IT service** is where you have the network services ,systems ,applications ,voice ,database as well as end user support related services .
+`IT services` : It is where you have the network services ,systems ,applications ,voice ,database as well as end user support related services .
 
 `Examples of Incidents` - Router down ,database down , Payroll service down and issues reported reported by users ,non IT or IT users.
 
@@ -21,19 +21,19 @@ authors: ['default']
 `SLA` stands for service level agreement. It refers to a document that outlines a commitment between a service provider and a client, including details of the service, the standards the provider must adhere to, and the metrics to measure the performance.
 
 
-### `Incident management objectives `
+## Objectives
 1. Restore Service as Quickly as Possible
 2. Minimize Impact and Downtime
 3. Meeting SLA’s provided by the organization ,internal or external org i.e SLA’s set by client
 4. Client & customer satisfaction 
 5. Improvement in the Business productivity 
 
-### `Inputs to Incident management`
+## Inputs
 - Phone call 
 - Web tool like snow(ServiceNOW) ,hp service center ,BSM remedy  or email etc
 - Incident can come from client or supplier 
 
-### `Incident management process activities`: 
+## Process activities: 
 It completely depends from organization to organization. A typical process activities but not limited to
 
 | **Step**        | **Activity**                                                            | Example
@@ -55,27 +55,77 @@ It completely depends from organization to organization. A typical process activ
 ![Incident management process activities](/static/images/blogs/incident-mgt-workflow.png)
 
 
-**Scope of Incident management -** understand define scope of IT service in the organization 
+## SLA 
+Service Level Agreement is a formal contract or agreement between a service provider and a customer that defines the expected level of service. 
+It specifies measurable performance targets, responsibilities, and obligations for both parties. 
 
+## What is correlation of SLM & Incident management?
 
+In the context of incident management, SLAs are used to ensure timely and efficient resolution of incidents while aligning service delivery with customer expectations.
 
-**SLM** -
+## Escalation types 
 
-&#x9;
+### 1. **Hierarchical Escalation or Managerial escalation**
+  - Hierarchical escalation refers to the process of passing an issue or incident up the organizational hierarchy based on the level of expertise or seniority.
 
-**What is correlation of SLM & Incident management -** 
+    - **Flow:** Issues move from junior staff to more experienced or specialized team members.
+    - **Purpose:** Ensures that the right expertise is involved in resolving complex problems.
+    - **Examples:** When a junior developer escalates a critical bug to a senior developer or when a customer service representative passes a challenging customer issue to a supervisor. For example, if a customer asks for a refund or discount that an associate can't give, they may need to speak to a manager
+     - **Advantages:** Utilizes specialized knowledge, maintains efficiency, and provides better support.
+     - **Challenges:** Can lead to slower decision-making and reduced empowerment of frontline staff.
+     - **Visual Representation**:
 
-Purpose of Service level management is to define SLA’s between service provider and client which is mutually agreed .It avoids penalty defined over SLA
+     **Junior Developer → Senior Developer**
 
+     **Customer Service Rep → Supervisor**
 
+### 2. **Functional Escalation**
+   - **Definition**: Functional escalation involves routing an issue to a specialized team or department based on the specific function or domain related to the problem.
+     - **Flow**: Issues move horizontally across functional areas (e.g., from development to testing, from IT support to network engineering).
+     - **Purpose**: Ensures that issues are handled by experts in the relevant domain.
+     - **Examples**: Escalating a database-related issue to the database administration team or forwarding a security incident to the cybersecurity team.
+     - **Advantages**: Efficiently addresses domain-specific challenges.
+     - **Challenges**: Requires effective communication between functions and clear handoffs.
+     - **Visual representation**
 
-**How escalation works in incident management  -** 2 types 
+       **Development Team → Testing Team**
 
+       **IT Support → Network Engineering**
 
+>Remember that both hierarchical and functional escalation play crucial roles in incident management, ensuring that the right people with the right expertise are involved in resolving issues within an organization. 
+
+## What is L1,L2 & L3?
+
+In the context of incident management, the terms L1, L2, and L3 refer to different levels or tiers of technical support. Let’s break down what each level entails
+
+### 1. **L1 (Level 1) Support:**
+  - Role: L1 support is the initial point of contact for users experiencing technical issues. It’s often provided by the user help desk.
+  - Responsibilities:
+     * Issue Screening: L1 personnel screen incoming issues, gather relevant information, and assess the severity.
+     * Basic Troubleshooting: They handle straightforward issues that can be resolved using predefined procedures or knowledge bases.
+     * User Assistance: L1 support assists users with common problems, such as password resets, software installations, and basic configuration.
+  * Example: If a user can’t log in to their email account, L1 support would guide them through the steps to reset their password.
+### 2. **L2 (Level 2) Support:**
+   - Role: L2 support comes into play when issues are more complex or require deeper technical expertise.
+   - Responsibilities:
+     * Advanced Troubleshooting: L2 personnel analyze incidents that couldn’t be resolved at L1. They use technical knowledge to diagnose and address issues.
+     * Configuration and Workarounds: L2 may perform basic configuration changes within applications or suggest workarounds.
+     * Interaction with Other Teams: If necessary, L2 collaborates with other teams (e.g., development, network) to resolve incidents.
+   * Example: Suppose an application is crashing due to a specific configuration.
+
+### 3. **L3 (Level 3) Support:**
+   - Role: L3 support handles the most complex and critical incidents.
+   - Responsibilities:
+     * Code Changes and Custom Solutions: L3 personnel deal with incidents that require code modifications, custom solutions, or deep system understanding.
+     * Root Cause Analysis: They identify underlying causes and address systemic issues.
+     * Escalation Point: L3 serves as an escalation point for unresolved L2 incidents.
+   * Example: If an application bug requires code changes or database adjustments, L3 support would handle it.
+
+>Remember that these levels are part of a structured approach to IT support, allowing organizations to efficiently address user needs and maintain high-quality service.
 
 1. **Functional** 
 
-For example Server management team has L1 , L2 and L3 
+For example ,A Server management team has L1 , L2 and L3 teams to handle incidents.
 
 So for P4 - response time is 120 minutes and resolution time is 480 minutes 
 
@@ -83,79 +133,7 @@ So we give 50% of time to L1 team for P4 incident 
 
 Remaining 50% of time given to L2 team 
 
-After 100% 
-
-Breached SLA’s will be given to L3 team ,
-
-
-
-1. **Hierarchical** 
-
-Hierarchical escalation, also known as managerial escalation, is when an issue is passed to a more senior person or team within an organization based on their experience or seniority level. This can happen when a customer's needs aren't being met by an agent, or when the customer is unhappy with their response and wants to speak to someone with more authority or expertise. For example, if a customer asks for a refund or discount that an associate can't give, they may need to speak to a manager
-
-1. **Hierarchical Escalation:**
-   * Definition: Hierarchical escalation refers to the process of passing an issue or incident up the organizational hierarchy based on the level of expertise or seniority.
-   * Key Points:
-     * Flow: Issues move from junior staff to more experienced or specialized team members.
-     * Purpose: Ensures that the right expertise is involved in resolving complex problems.
-     * Examples: When a junior developer escalates a critical bug to a senior developer or when a customer service representative passes a challenging customer issue to a supervisor.
-     * Advantages: Utilizes specialized knowledge, maintains efficiency, and provides better support.
-     * Challenges: Can lead to slower decision-making and reduced empowerment of frontline staff.
-     * **Visual Representation**:
-
-Junior Developer → Senior Developer
-
-Customer Service Rep → Supervisor
-
-1. **Functional Escalation:**
-   * **Definition**: Functional escalation involves routing an issue to a specialized team or department based on the specific function or domain related to the problem.
-   * **Key Points**:
-     * **Flow**: Issues move horizontally across functional areas (e.g., from development to testing, from IT support to network engineering).
-     * **Purpose**: Ensures that issues are handled by experts in the relevant domain.
-     * **Examples**: Escalating a database-related issue to the database administration team or forwarding a security incident to the cybersecurity team.
-     * **Advantages**: Efficiently addresses domain-specific challenges.
-     * **Challenges**: Requires effective communication between functions and clear handoffs.
-     * **Visual representation** 
-       1. Development Team → Testing Team
-       2. IT Support → Network Engineering
-
-Remember that both hierarchical and functional escalation play crucial roles in incident management, ensuring that the right people with the right expertise are involved in resolving issues within an organization. 
-
-
-
-**Give me some Incident management process improvement -** 
-
-
-
-**Incident management L1,L2 & L3-** 
-
-
-
-In the context of incident management, the terms L1, L2, and L3 refer to different levels or tiers of technical support. Let’s break down what each level entails:
-
-1. **L1 (Level 1) Support:**
-   * Role: L1 support is the initial point of contact for users experiencing technical issues. It’s often provided by the user help desk.
-   * Responsibilities:
-     * Issue Screening: L1 personnel screen incoming issues, gather relevant information, and assess the severity.
-     * Basic Troubleshooting: They handle straightforward issues that can be resolved using predefined procedures or knowledge bases.
-     * User Assistance: L1 support assists users with common problems, such as password resets, software installations, and basic configuration.
-   * [Example: If a user can’t log in to their email account, L1 support would guide them through the steps to reset their](https://www.infosys.com/digital/insights/Documents/application-maintenance-support.pdf) password
-2. **L2 (Level 2) Support:**
-   * Role: L2 support comes into play when issues are more complex or require deeper technical expertise.
-   * Responsibilities:
-     * Advanced Troubleshooting: L2 personnel analyze incidents that couldn’t be resolved at L1. They use technical knowledge to diagnose and address issues.
-     * Configuration and Workarounds: L2 may perform basic configuration changes within applications or suggest workarounds.
-     * Interaction with Other Teams: If necessary, L2 collaborates with other teams (e.g., development, network) to resolve incidents.
-   * Example: Suppose an application is crashing due to a specific configuration. [L2 would investigate and make necessary adjustments1](https://www.infosys.com/digital/insights/Documents/application-maintenance-support.pdf).
-3. **L3 (Level 3) Support:**
-   * Role: L3 support handles the most complex and critical incidents.
-   * Responsibilities:
-     * Code Changes and Custom Solutions: L3 personnel deal with incidents that require code modifications, custom solutions, or deep system understanding.
-     * Root Cause Analysis: They identify underlying causes and address systemic issues.
-     * Escalation Point: L3 serves as an escalation point for unresolved L2 incidents.
-   * [Example: If an application bug requires code changes or database adjustments, L3 support would handle it1](https://www.infosys.com/digital/insights/Documents/application-maintenance-support.pdf).
-
-Remember that these levels are part of a structured approach to IT support, allowing organizations to efficiently address user needs and maintain high-quality service.
+After 100%  ,Breached SLA’s will be given to L3 team.
 
  [Each level builds upon the previous one, ensuring a comprehensive support system](https://www.infosys.com/digital/insights/Documents/application-maintenance-support.pdf)
 
