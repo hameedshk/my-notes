@@ -35,14 +35,18 @@ export function KBarSearchProvider({
     function mapPosts(posts: CoreContent<MDXDocument>[]) {
       let actions: Action[] = []
       for (let post of posts) {
+        debugger
+        if (!post.draft) 
+        {
         actions.push({
           id: post.path,
           name: post.title,
           keywords: `${post.summary || ''} ${post.tags?.join(' ') || ''} ${post.author || ''}`,
           section: 'Content',
-          subtitle: formatDate(post.date),
+          subtitle: formatDate(post.date),          
           perform: () => router.push('/' + post.path),
         })
+      }
       }
       return actions
     }
