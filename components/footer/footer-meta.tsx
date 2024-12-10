@@ -42,17 +42,17 @@ export function FooterMeta() {
 
   return (
     <div className="space-y-2 py-1.5 text-gray-800 dark:text-gray-200">
-      <div className="flex items-center gap-1 font-medium">
+      {/*<div className="flex items-center gap-1 font-medium">
         <Github className="h-5 w-5" />
-        <Link href={SITE_METADATA.siteRepo} className="ml-1">
+         <Link href={SITE_METADATA.siteRepo} className="ml-1">
           <GrowingUnderline data-umami-event="view-repo">{repoName}</GrowingUnderline>
         </Link>
         <span>-</span>
         <span className="inline-flex items-center text-gray-500 dark:text-gray-400">
           <Star className="mr-1 h-4 w-4" />
           {repo ? <span>{repo.stargazerCount}</span> : '---'}
-        </span>
-      </div>
+        </span> 
+      </div>*/}
       <div className="flex items-center gap-2">
         <Map className="h-5 w-5" />
         <span className="font-medium">

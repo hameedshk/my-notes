@@ -38,7 +38,7 @@ export function KBarSearchProvider({
         actions.push({
           id: post.path,
           name: post.title,
-          keywords: post?.summary || '',
+          keywords: `${post.summary || ''} ${post.tags?.join(' ') || ''} ${post.author || ''}`,
           section: 'Content',
           subtitle: formatDate(post.date),
           perform: () => router.push('/' + post.path),
