@@ -1,8 +1,8 @@
 import type { NextRequest } from 'next/server'
-// import { getBlogStats, updateBlogStats } from '~/db/queries'
+ import { getBlogStats, updateBlogStats } from '~/db/queries'
 import type { SelectStats, StatsType } from '~/db/schema'
 
-/*export async function GET(request: NextRequest) {
+export async function GET(request: NextRequest) {
   try {
     let { searchParams: params } = new URL(request.url)
     let slug = params.get('slug')
@@ -46,4 +46,4 @@ export async function POST(request: NextRequest) {
     console.error(e)
     return Response.json({ message: 'Internal Server Error!' }, { status: 500 })
   }
-}*/
+}

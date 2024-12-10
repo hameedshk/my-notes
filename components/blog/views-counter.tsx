@@ -2,9 +2,9 @@
 
 import { useEffect } from 'react'
 import type { StatsType } from '~/db/schema'
-// import { useBlogStats, useUpdateBlogStats } from '~/hooks/use-blog-stats'
+ import { useBlogStats, useUpdateBlogStats } from '~/hooks/use-blog-stats'
 
-/*export function ViewsCounter({
+export function ViewsCounter({
   type,
   slug,
   className,
@@ -24,4 +24,3 @@ import type { StatsType } from '~/db/schema'
 
   return <span className={className}>{isLoading ? '---' : (stats['views'] || 0) + ' views'}</span>
 }
-*/

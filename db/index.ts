@@ -6,4 +6,4 @@ if (!process.env.DATABASE_URL) {
   console.warn('process.env.DATABASE_URL is not set!')
 }
 
-//export let db = drizzle(process.env.DATABASE_URL)
+export let db = drizzle(process.env.DATABASE_URL)

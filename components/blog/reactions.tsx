@@ -3,12 +3,12 @@
 import { clsx } from 'clsx'
 import { useEffect, useRef, useState } from 'react'
 import { Twemoji } from '~/components/ui/twemoji'
-// import type { SelectStats, StatsType } from '~/db/schema'
-// import { useBlogStats, useUpdateBlogStats } from '~/hooks/use-blog-stats'
+ import type { SelectStats, StatsType } from '~/db/schema'
+ import { useBlogStats, useUpdateBlogStats } from '~/hooks/use-blog-stats'
 
 const MAX_REACTIONS = 10
 
-/*const REACTIONS: Array<{ emoji: string; key: keyof SelectStats }> = [
+const REACTIONS: Array<{ emoji: string; key: keyof SelectStats }> = [
   {
     emoji: 'sparkling-heart',
     key: 'loves',
@@ -25,9 +25,9 @@ const MAX_REACTIONS = 10
     emoji: 'light-bulb',
     key: 'ideas',
   },
-]*/
+]
 
-/*export function Reactions({
+export function Reactions({
   type,
   slug,
   className,
@@ -51,9 +51,9 @@ const MAX_REACTIONS = 10
       setInitialReactions(Object.assign({}, data))
       setReactions(Object.assign({}, data))
     } catch (e) {}
-  }, [])*/
+  }, [])
 
-  /*function handleChange(key: string) {
+  function handleChange(key: string) {
     updateReaction({ type, slug, [key]: stats[key] + reactions[key] - initialReactions[key] })
     localStorage.setItem(`${type}/${slug}`, JSON.stringify(reactions))
   }
@@ -72,9 +72,9 @@ const MAX_REACTIONS = 10
       ))}
     </div>
   )
-}*/
+}
 
-/*function Reaction({
+function Reaction({
   emoji,
   value,
   reactions,
@@ -160,4 +160,4 @@ const MAX_REACTIONS = 10
       </span>
     </button>
   )
-}*/
+}
