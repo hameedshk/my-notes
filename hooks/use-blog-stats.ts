@@ -26,7 +26,6 @@ export function useUpdateBlogStats() {
   let { trigger } = useSWRMutation(
     '/api/stats',
     async (url: string, { arg }: { arg: Partial<SelectStats> }) => {
-      console.log(url);
       return fetch(url, {
         method: 'POST',
         body: JSON.stringify(arg),

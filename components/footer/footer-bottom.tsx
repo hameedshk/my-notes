@@ -22,7 +22,7 @@ export function FooterBottom() {
       /> */}
       <div className="flex items-center">
       <span className="mx-2.5 text-dark-400">SHK Inc © 2024</span>
-        <Link href={SITE_METADATA.siteRepo}>        
+        <Link >        
           <span data-umami-event="made-in-india">
             {/* <h1 className="absolute ml-1.5 inline-flex pt-[3px]">Made In India  */}
               <Twemoji emoji="flag-india" />

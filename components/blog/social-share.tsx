@@ -87,18 +87,18 @@ export function SocialShare({ postUrl, filePath, title, className }: SocialButto
               <Linkedin strokeWidth={1.5} size={18} />
               <span className="">Share on LinkedIn</span>
             </LinkedinShareButton>
-            <FacebookShareButton
+            {/* <FacebookShareButton
               url={postUrl}
               className="flex items-center gap-2.5 !text-gray-600 hover:!text-gray-900 dark:!text-gray-400 dark:hover:!text-gray-100"
             >
               <Facebook strokeWidth={1.5} size={18} />
               <span className="">Share on Facebook</span>
-            </FacebookShareButton>
+            </FacebookShareButton> */}
           </div>
-          <div className="flex flex-col gap-3 px-4 py-3">
-            <DiscussOnX postUrl={postUrl} />
-            <EditOnGithub filePath={filePath} />
-          </div>
+          {/* <div className="flex flex-col gap-3 px-4 py-3"> */}
+            {/* <DiscussOnX postUrl={postUrl} /> */}
+            {/* <EditOnGithub filePath={filePath} /> */}
+          {/* </div> */}
         </MenuItems>
       </Transition>
     </Menu>

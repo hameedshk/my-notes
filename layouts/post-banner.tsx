@@ -56,9 +56,9 @@ export function PostBanner({ content, children }: LayoutProps) {
         <div className="space-y-8 border-t border-gray-200 pt-4 dark:border-gray-700">
           <div className="flex justify-between gap-4">
             <div className="flex items-center gap-2">
-              <DiscussOnX postUrl={postUrl} />
+              {/* <DiscussOnX postUrl={postUrl} />
               <span className="text-gray-500">/</span>
-              <EditOnGithub filePath={filePath} />
+              <EditOnGithub filePath={filePath} /> */}
             </div>
             {/* <SocialShare postUrl={postUrl} title={title} /> */}
           </div>

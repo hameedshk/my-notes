@@ -47,7 +47,7 @@ export function ProfileCardInfo() {
         <div className="flex items-center text-gray-700 dark:text-gray-200">
           <BriefcaseBusiness strokeWidth={1.5} size={20} />
           <p className="flex items-center px-2">
-            Product Manager @{' '}
+            Product Owner @{' '}
             <a
               target="_blank"
               href="https://airbus.com"

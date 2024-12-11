@@ -35,7 +35,6 @@ export function KBarSearchProvider({
     function mapPosts(posts: CoreContent<MDXDocument>[]) {
       let actions: Action[] = []
       for (let post of posts) {
-        debugger
         if (!post.draft) 
         {
         actions.push({
