@@ -51,7 +51,7 @@ export function PostLayout({ content, next, prev, children }: LayoutProps) {
               postUrl={postUrl}
               filePath={filePath}
               title={title}
-              className="hidden md:flex"
+              // className="hidden md:flex"
             />
           </div>
         </div>

@@ -70,6 +70,14 @@ export function SocialShare({ postUrl, filePath, title, className }: SocialButto
             </button>
           </div>
           <div className="space-y-3 px-4 py-3">
+          <LinkedinShareButton
+              url={postUrl}
+              title={title}
+              className="flex items-center gap-2.5 !text-gray-600 hover:!text-gray-900 dark:!text-gray-400 dark:hover:!text-gray-100"
+            >
+              <Linkedin strokeWidth={1.5} size={18} />
+              <span className="">Share on LinkedIn</span>
+            </LinkedinShareButton>
             <TwitterShareButton
               url={postUrl}
               title={title}
@@ -78,15 +86,7 @@ export function SocialShare({ postUrl, filePath, title, className }: SocialButto
             >
               <XIcon className="h-4 w-4" fill="#fff" viewBox="0 0 1200 1227" />
               <span className="">Share on X (Twitter)</span>
-            </TwitterShareButton>
-            <LinkedinShareButton
-              url={postUrl}
-              title={title}
-              className="flex items-center gap-2.5 !text-gray-600 hover:!text-gray-900 dark:!text-gray-400 dark:hover:!text-gray-100"
-            >
-              <Linkedin strokeWidth={1.5} size={18} />
-              <span className="">Share on LinkedIn</span>
-            </LinkedinShareButton>
+            </TwitterShareButton>           
             {/* <FacebookShareButton
               url={postUrl}
               className="flex items-center gap-2.5 !text-gray-600 hover:!text-gray-900 dark:!text-gray-400 dark:hover:!text-gray-100"
