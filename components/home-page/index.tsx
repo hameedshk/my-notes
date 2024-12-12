@@ -26,7 +26,7 @@ export function Home({
             <TypedBios />
              <div className="mb-6 mt-4 md:mb-8">
               <p>I started learning to code in 2012 and have been hooked ever since.</p>
-              <p>I landed my first job as a Software Engineer in 2014.</p>              
+              <p>I landed my first job as a Associate Software Engineer in 2014.</p>              
               <p>I started this blog to document and share my knowledge & experience.</p>
             </div> 
             <BlogLinks />
