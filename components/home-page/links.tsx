@@ -27,13 +27,13 @@ const LINKS = [
     href: `/about`,
     emoji: 'smiling-face-with-sunglasses',
     event: 'home-link-about',
-  },
-  {
-    title: `Traffic and insights`,
-    href: SITE_METADATA.analytics.umamiAnalytics.shareUrl,
-    emoji: 'bar-chart',
-    event: 'home-link-analytics',
   }
+  /*{
+  //   title: `Traffic and insights`,
+  //   href: SITE_METADATA.analytics.umamiAnalytics.shareUrl,
+  //   emoji: 'bar-chart',
+  //   event: 'home-link-analytics',
+  // }*/
 ]
 
 export function BlogLinks() {

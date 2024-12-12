@@ -15,7 +15,7 @@ export const SITE_METADATA = {
   x: 'https://x.com/kshameed7',
   facebook: 'https://facebook.com/hameed',
   youtube: 'https://www.youtube.com/hameed',
-  linkedin: 'https://linkedin.com/in/hameedshk/',
+  linkedin: 'https://linkedin.com/in/hameedshk',
   threads: 'https://www.threads.net/syedhameedk',
   instagram: 'https://www.instagram.com/hmd.exe',
   locale: 'en-US',
