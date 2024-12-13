@@ -1,8 +1,8 @@
 ---
-title: 'Does JavaScript Promise.all() run in parallel or sequential?'
-date: '2023-09-04'
-lastmod: '2024-11-11'
-tags: ['javascript', 'promise', 'parallel', 'sequential', 'concurrently']
+title: 'Markdown cheatsheet'
+date: '2023-12-01'
+lastmod: '2024-12-01'
+tags: ['mdx', 'markdown', 'syntax','fomat','output']
 summary: "JavaScript is a single-threaded programming language, so it can't run multiple things at the same time, Promise.all() actually runs promises concurrently, not in parallel!. Let's dive in to see how it works."
 images:
   [
@@ -14,12 +14,29 @@ draft : true
 
 ## Introduction
 
-This **word** is bold. This <em>word</em> is italic.
+| **Fomat Name**         | **Syntax**                               | **Output**
+| --------           | -------                              |-------
+| Bold               | This `**word\**` is bold             |This **word** is bold.
+| Italic             | This `<em>word</em>` is italic       |This <em>word</em> is italic
+| Underline          | This `<ins>word</ins>` is underlined |This <ins>word</ins> is underlined 
+| Underline          | This `<ins>word</ins>` is underlined |This <ins>word</ins> is underlined 
+| Hyperlink-1        | `[label](http://example.com)`        |[Google](http://google.com)
+| Hyperlink-2        | `[key]: http://example.com`          |[Google URL]: http://google.com
+| Image              | `![Gen AI](/static/images/blogs/gen-ai.png)` |![Gen AI](/static/images/blogs/gen-ai.png)
+| Comments        | `\| This is a comment and will not be part of the `DOM` and hence it will be empty on the browser \|`         | |This is a comment and will not be part of the DOM  and hence it will be empty on the browser| | 
 
-<ins>underline</ins>
+--------------------------------------------
+[comment]::dsdsd
+[comment]: # ( Happy reading! <Twemoji emoji="clinking-beer-mugs" /> )
+
 ## Application Issues
 
-From medium to large-scale applications, challenges like architecture maintenance and scalability hinder progress. So, What challenges typically arise as an application scales from medium to large size ?
+|  A |B   |c   |   |   |
+|---|---|---|---|---|
+|  1 |  2 | 4  |   |   |
+|   5| 6  |   |   |   |
+|   |   |   |   |   |
+
 
 ### Lack of common architecture
 
@@ -36,27 +53,6 @@ When it comes to developing applications, one of the persistent challenges devel
 - **Code Reusability**: Without predefined patterns or modules, developers often face hurdles when attempting to reuse code across different sections of the application.
 
 - **Non-standard Type Validation**: Avoid conducting validation prior to storing data in the database or validating the data received from the API.
-### Hyperlinks 
-
-1. Standard links in which both the label and URL are defined together:
-
-[label](http://example.com)
-
-2. Reference links, which can be in one of two forms:
-
-[label][key] or [key]
-
-[key]: http://example.com
-
-3.Automatic Links, where the label is the URL:
-
-### Scalability problem
-
-As projects grow, the absence of a common architecture can hinder scalability. Without standardized patterns, scaling applications becomes intricate, leading to poor performance.
-
-### Comments 
-
-## Conclusion
 
 In conclusion, our exploration of challenges in medium to large-scale application development underscores the critical need for standardized architecture.
 
@@ -113,7 +109,7 @@ promise1().then(() => {
 The second approach is well-known as running them in **"parallel"**, meaning that all promises will start at the same time.
 It's useful when you don't need to wait for the previous promise to be resolved before starting the next one.
 
-But does it really run in parallel (or all at once)? <Twemoji emoji="thinking-face" />
+But does it really run in parallel (or all at once)?
 
 The answer is no. JavaScript is single-threaded programming language, so it can't run multiple things at the exact same time (except for some circumstances such as [web workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers).)
 `Promise.all()` actually runs them concurrently, not in parallel!
@@ -169,4 +165,3 @@ for (let item of items) {
 - [Parallelism vs. Concurrency](https://wiki.haskell.org/Parallelism_vs._Concurrency)
 - [JavaScript Event Loop structure](https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop)
 
-Happy promise-ing! <Twemoji emoji="clinking-beer-mugs" />
