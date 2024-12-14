@@ -15,10 +15,12 @@ export function ViewsCounter({
 }) {
   let [stats, isLoading] = useBlogStats(type, slug)
   let updateView = useUpdateBlogStats()
+  const key = `viewed-${slug}`; // Unique key for each page
 
   useEffect(() => {
-    if (!isLoading && stats) {
+    if (!isLoading && stats && !localStorage.getItem(key)) {
       updateView({ type, slug, views: stats['views'] + 1 })
+      localStorage.setItem(key, 'true'); // Mark as viewed
     }
   }, [stats, isLoading])
 
