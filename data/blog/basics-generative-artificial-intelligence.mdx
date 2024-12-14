@@ -101,30 +101,6 @@ And that's it, we have created a responsive image .
 
 Take a look at the example above, let's say we are on a mobile phone with a screen size of `400px` wide.
 
-- The first condition match that screen is `(max-width: 640px)`.
-- The size defined in the condition is `640px`.
-- The image source with the same size in the `srcset` attribute is `image-640.jpg`.
-- The browser will load the image and display it.
-
-## Beyond the basics
-
-- For the `sizes` attribute, you can use `vw` instead of `px` to define the size.
-  This is useful when you want to use the viewport width as the size.
-  For example, if you want to use the viewport width as the size, you can use `100vw` as the size.
-
-- Combine `srcset` & `sizes` with `loading="lazy"` to improve performance.
-  When the `loading` attribute is set to `lazy`, the browser will not load the image until it is visible in the viewport.
-  This is useful when you have a lot of images on the page and you want to improve the page's performance.
-
-- Better add `width` and `height` attributes to the `img` element.
-  When the `width` and `height` attributes are added to the `img` element, the browser will reserve the space for the image before it is loaded.
-  This is useful to prevent layout shifts and improve the experience to your visitors.
-
-- And don't forget to add a fallback image with the `src` attribute.
-  When the browser doesn't support the `srcset` and `sizes` attributes, it will use the image source defined in the `src` attribute.
-
-At the end, the `img` element should look like this:
-
 ```html showLineNumbers
 <img
   src="image.jpg"
