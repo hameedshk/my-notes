@@ -18,16 +18,16 @@ export function Home({
 }) {
   return (
     <Container as="div" className="pt-4 lg:pt-12">
-      <div className="py-6 md:pb-8 xl:grid xl:grid-cols-3">
+      <div className="md:pb-8 xl:grid xl:grid-cols-3">
         <div className="space-y-4 md:space-y-6 md:pr-8 xl:col-span-2">
           <Greeting />
           <div className="text-base leading-7 text-gray-600 dark:text-gray-400 md:text-lg md:leading-8">
-            <Intro />
-            <TypedBios />
+             <Intro /> 
+             <TypedBios />
              <div className="mb-6 mt-4 md:mb-8">
-              <p>I started learning to code in 2012 and have been hooked ever since.</p>
-              <p>I landed my first job as a Associate Software Engineer in 2014.</p>              
-              <p>I started this blog to document and share my knowledge & experience.</p>
+              <p>Welcome to My Notes</p>
+              <p>My Digital repository for Technology & Product Management Insights.</p>                            
+              <p>Unlocking Insights: My Journey in Tech and Product Management.</p>
             </div> 
             <BlogLinks />
             <p className="my-6 flex md:my-8">
@@ -36,7 +36,7 @@ export function Home({
             </p>
           </div>
         </div>
-        <div className="hidden pl-4 pt-8 xl:block">
+        <div className="hidden pl-4 xl:block">
           <ProfileCard />
         </div>
       </div>

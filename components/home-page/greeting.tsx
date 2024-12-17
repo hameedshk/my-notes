@@ -6,13 +6,13 @@ export function Greeting() {
     <div
       className={clsx(
         'font-greeting tracking-tight',
-        'text-[20px] leading-[40px] md:text-[28px] md:leading-[50px]',
+        'text-[15px] leading-[40px] md:text-[28px] md:leading-[50px]',
         'bg-clip-text text-transparent',
-        'bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-[#14C9CB] to-lime-600',
-        'dark:bg-gradient-to-l dark:from-[#14C9CB] dark:to-lime-600'
+        'bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-[#E54A66] to-[#FD6050]',
+        'dark:bg-gradient-to-l'
       )}
     >
-      Hi, fellow! <Twemoji emoji="waving-hand" size="base" />
+      Hi, I am Hameed! <Twemoji emoji="waving-hand" size="base" />
     </div>
   )
 }
