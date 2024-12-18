@@ -22,25 +22,26 @@ export function Home({
   return (
     <Container as="div" className="pt-4 lg:pt-12">
       <div className="xl:grid xl:grid-cols-3">
-        <div className="space-y-6 md:space-y-8 md:pr-8 xl:col-span-2 text-left">
+        <div className="md:pr-8 xl:col-span-2 text-left">
           <Greeting />
-          <div className="text-base leading-7 text-gray-600 dark:text-gray-400 mt-1 md:text-lg md:leading-8">
+          <div className="text-base leading-7 text-gray-600 dark:text-gray-400 mt-4 md:text-lg md:leading-8">
              <Intro /> 
-             <TypedBios />
-             <div className="my-8">
-              <p className="font-semibold text-xl md:text-2xl">Welcome to My Notes</p>
-              <p className="mt-2 text-gray-500">My Digital repository for Technology & Product Management Insights.</p>                                          
+             {/* <TypedBios /> */}
+             <div className="mt-4">
+              {/* <p className="font-semibold text-lg md:text-xl">Welcome to My Notes</p> */}
+              <p className="text-gray-500">My Digital repository for Technology & Product Management Insights.</p>                                          
             </div>             
-            <div className="space-y-3 md:space-y-4">
+            <div className="mt-4">
             <BlogLinks />
             </div>            
-            <div className="my-8">
+            <div className="mt-4">
       <p className="text-lg font-medium">You can connect with me via</p>
-      <div className="flex justify-start space-x-6 mt-4">
-        <SocialAccounts />
+      <div className="flex justify-start space-x-2 mt-6">
+      <Twemoji emoji="laptop" />
+      <SocialAccounts />
       </div>
     </div>
-    <div className="my-8 text-center flex justify-start items-center">
+    <div className="my-4 text-center flex justify-start items-center">
       <p className="text-lg font-medium mr-2">Happy reading</p>
       <Twemoji emoji="sparkles" />
     </div>

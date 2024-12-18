@@ -25,7 +25,7 @@ const LINKS = [
   {
     title: `About me & this blog`,
     href: `/about`,
-    emoji: 'smiling-face-with-sunglasses',
+    emoji: 'magnifying-glass-tilted-right',
     event: 'home-link-about',
   }
   /*{
