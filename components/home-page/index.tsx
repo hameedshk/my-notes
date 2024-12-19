@@ -38,9 +38,9 @@ export function Home({
             <BlogLinks />            
             </div>            
             <div className="mt-6">
-      <p className="text-lg font-medium">You can connect with me via <Twemoji emoji="laptop" /></p>
-      <div className="flex justify-start space-x-4 mt-4">      
-      <SocialAccounts />
+            <p>You can connect with me via <Twemoji emoji="laptop" /></p>
+            <div className="flex justify-start space-x-4 mt-4 mb-4">      
+            <SocialAccounts />
       </div>
     </div>
     {/* <div className="my-8 text-center flex justify-start items-center"> 

@@ -13,8 +13,8 @@ export function FooterBottom() {
     <div
       className={clsx([
         'pt-5 md:my-2',
-        'flex flex-col items-center justify-center gap-4 md:flex-row  md:gap-16',
-        'border-t border-gray-200 dark:border-gray-700',
+        'flex flex-col items-center justify-center gap-4 md:flex-row gap-16',
+        'border-t border-gray-200 dark:border-gray-700 ',
       ])}
     >
       {/* <SpotifyNowPlaying
