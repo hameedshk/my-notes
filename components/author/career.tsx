@@ -93,10 +93,10 @@ const EXPERIENCES = [
     org: 'Scientific Games India Pvt Ltd',
     url: 'https://www.scientificgames.com/',
     logo: '/static/images/sg-logo.jpg',
-    start: 'Aug 2018',
-    end: 'Oct 2026',
-    title: 'Fullstack Developer',
-    icon: 'man-technologist',
+    start: 'Oct 2016',
+    end: 'Aug 2018',
+    title: 'Full Stack Developer',
+    icon: 'bar-chart',
     event: 'career-bravebits',
     details: () => {
       return (
@@ -114,7 +114,7 @@ const EXPERIENCES = [
     start: 'Aug 2014',
     end: 'Oct 2016',
     title: 'Software Engineer',
-    icon: 'man-technologist',
+    icon: 'eye',
     event: 'career-mindx',
     details: () => {
       return (

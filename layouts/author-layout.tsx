@@ -20,7 +20,7 @@ export function AuthorLayout({ children }: Props) {
     <Container className="pt-4 lg:pt-12">
       <PageHeader
         title="About"
-        description="A bit of background on who I am, what I do, and why I started this blog. Nothing too serious, just a little intro to the person typing away behind the scenes."
+        description="Welcome to my little corner of the internet.A bit of background on who I am, what I do, and why I started this blog. Nothing too serious, just a little intro to the person typing away behind the scenes."
         className="border-b border-gray-200 dark:border-gray-700"
       />
       <div className="py-8 md:grid md:grid-cols-3">
@@ -39,13 +39,12 @@ export function AuthorLayout({ children }: Props) {
               </p>
               <p>
                 This blog serves as a journal for documenting and sharing the insights and knowledge
-                I've gained as a software engineer. Building, writing, and sharing things is a great
-                way for me to solidify my understanding of new concepts and ideas.
+                I've gained as a software engineer. 2 main purpose
               </p>
               <p>
-              To Store: A personal repository of what I’ve learned, read, and applied —a digital journal to ensure nothing gets forgotten as time flys.
+              <u style={{ color : '#f3696e' }}>To Store: </u><Twemoji emoji='open-book'/> A personal repository of what I’ve learned, read, and applied a digital journal to ensure nothing gets forgotten as time flys.
               </p>
-              To Share: Insights, lessons, and strategies I’ve gathered while navigating the intersection of tech and product.
+              <u style={{ color : '#f3696e' }}>To Share: </u><Twemoji emoji='rocket'/> Insights, lessons, and strategies I’ve gathered while navigating the intersection of tech and product in this digital journey.
               <p>
                 I would greatly appreciate any comments and thoughts on my posts{' '}
                 <Twemoji emoji="sparkles" />.
