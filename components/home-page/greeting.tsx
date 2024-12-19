@@ -10,9 +10,8 @@ export function Greeting() {
         'bg-clip-text text-transparent',
         'bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-[#E54A66] to-[#FD6050]',
         'dark:bg-gradient-to-l'
-      )}
-    >
-      Hi, I am Hameed! <Twemoji emoji="waving-hand" size="base" />
+      )}>
+      Hi, I am Hameed.
     </div>
   )
 }

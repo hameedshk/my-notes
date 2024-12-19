@@ -61,7 +61,8 @@ export function ProfileCardInfo() {
         <div className="flex items-center text-gray-700 dark:text-gray-200">
           <MapPin strokeWidth={1.5} size={20} />
           <p className="px-2">
-           Bengaluru, India<Twemoji emoji="flag-india" className="!h-4.5" />
+           Bengaluru, India
+           <span className="absolute ml-2 inline-flex pt-[2px]"> <Twemoji emoji="flag-india" /></span>
           </p>
         </div>
         <div className="flex items-center text-gray-700 dark:text-gray-200">

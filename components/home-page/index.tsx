@@ -11,6 +11,7 @@ import { TypedBios } from './typed-bios'
 import { Link } from '../ui/link'
 import { ProfileCardInfo } from '../cards/profile/profile-info'
 import { SocialAccounts } from '../author/social-accounts'
+import { TagsList } from '../blog/tags'
 
 export function Home({
   posts,
@@ -24,27 +25,28 @@ export function Home({
       <div className="xl:grid xl:grid-cols-3">
         <div className="md:pr-8 xl:col-span-2 text-left">
           <Greeting />
-          <div className="text-base leading-7 text-gray-600 dark:text-gray-400 mt-4 md:text-lg md:leading-8">
-             <Intro /> 
+          <div className="text-base leading-8 text-gray-600 dark:text-gray-400 mt-4 md:text-lg md:leading-9">
+             <Intro />             
              {/* <TypedBios /> */}
-             <div className="mt-4">
-              {/* <p className="font-semibold text-lg md:text-xl">Welcome to My Notes</p> */}
-              <p className="text-gray-500">My Digital repository for Technology & Product Management Insights.</p>                                          
+             <div className="mt-6">
+              <h2 className="font-semibold text-xl md:text-2xl text-gray-800 dark:text-gray-200 tracking-wide">Welcome to My Notes</h2>
+              <p className="mt-4">My Digital repository for Technology & Product Management Insights.</p>                                          
+              <p className="mt-2">Sharing lessons learned and experiences from the trenches of tech and product management.
+              </p>
             </div>             
-            <div className="mt-4">
-            <BlogLinks />
+            <div className="mt-6">
+            <BlogLinks />            
             </div>            
-            <div className="mt-4">
-      <p className="text-lg font-medium">You can connect with me via</p>
-      <div className="flex justify-start space-x-2 mt-6">
-      <Twemoji emoji="laptop" />
+            <div className="mt-6">
+      <p className="text-lg font-medium">You can connect with me via <Twemoji emoji="laptop" /></p>
+      <div className="flex justify-start space-x-4 mt-4">      
       <SocialAccounts />
       </div>
     </div>
-    <div className="my-4 text-center flex justify-start items-center">
-      <p className="text-lg font-medium mr-2">Happy reading</p>
+    {/* <div className="my-8 text-center flex justify-start items-center"> 
+      <p className="text-lg font-medium mr-2">Happy surfing</p>
       <Twemoji emoji="sparkles" />
-    </div>
+    </div>*/}
           </div>
         </div>
         <div className="hidden pl-4 xl:block">
