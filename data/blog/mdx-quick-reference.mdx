@@ -19,17 +19,39 @@ draft : true
 | Bold               | This `**word\**` is bold             |This **word** is bold.
 | Italic             | This `<em>word</em>` is italic       |This <em>word</em> is italic
 | Underline          | This `<ins>word</ins>` is underlined |This <ins>word</ins> is underlined 
-| Underline          | This `<ins>word</ins>` is underlined |This <ins>word</ins> is underlined 
 | Hyperlink-1        | `[label](http://example.com)`        |[Google](http://google.com)
 | Hyperlink-2        | `[key]: http://example.com`          |[Google URL]: http://google.com
 | Image              | `![Gen AI](/static/images/blogs/gen-ai.png)` |![Gen AI](/static/images/blogs/gen-ai.png)
+| Image with caption |  `<figure>    <img src="/static/images/blogs/gen-ai.png" alt="Gen AI image"/> <figcaption>Gen AI Input and Output. </figcaption> </figure>` | <figure>    <img src="/static/images/blogs/gen-ai.png" alt="Gen AI image"/> <figcaption>Gen AI Input and Output. </figcaption> </figure> 
 | Comments        | `\| This is a comment and will not be part of the `DOM` and hence it will be empty on the browser \|`         | |This is a comment and will not be part of the DOM  and hence it will be empty on the browser| | 
+| Color | This is red `#RRGGBB` in color                               | This is red `#RRGGBB` in color
+| Color - HTML way| `This is <span style="color:red">red</span> in color`                               | This is  in color
+| Strikethrough | `It was a ~~mistake~~`                       | It was a ~~mistake~~
 | Horizontal rule | `---------------`                       | ---------------
-| Add color to a text | `$${\color{red}Red}$$`                       | hi `#ffffff`
+| Horizontal rule | `---------------`                       | ---------------
 
 --------------------------------------------
 [comment]::dsdsd
 [comment]: # ( Happy reading! <Twemoji emoji="clinking-beer-mugs" /> )
+
+> [!NOTE]
+> Useful information that users should know, even when skimming content.
+
+> [!TIP]
+> Helpful advice for doing things better or more easily.
+
+> [!IMPORTANT]
+> Key information users need to know to achieve their goal.
+
+> [!WARNING]
+> Urgent info that needs immediate user attention to avoid problems.
+
+> [!CAUTION]
+> Advises about risks or negative outcomes of certain actions.
+
+- [x] #739
+- [ ] https://github.com/octo-org/octo-repo/issues/740
+- [ ] Add delight to the experience when all tasks are complete :tada:
 
 ## Application Issues
 
