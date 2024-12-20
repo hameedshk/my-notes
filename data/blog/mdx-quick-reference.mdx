@@ -22,10 +22,10 @@ draft : true
 | Hyperlink-1        | `[label](http://example.com)`        |[Google](http://google.com)
 | Hyperlink-2        | `[key]: http://example.com`          |[Google URL]: http://google.com
 | Image              | `![Gen AI](/static/images/blogs/gen-ai.png)` |![Gen AI](/static/images/blogs/gen-ai.png)
-| Image with caption |  `<figure>    <img src="/static/images/blogs/gen-ai.png" alt="Gen AI image"/> <figcaption>Gen AI Input and Output. </figcaption> </figure>` | <figure>    <img src="/static/images/blogs/gen-ai.png" alt="Gen AI image"/> <figcaption>Gen AI Input and Output. </figcaption> </figure> 
+| Image with caption |  `<figure>    <img src="/static/images/blogs/gen-ai.png" alt="Gen AI image" style="box-shadow: 3px 3px 3px red"/> <figcaption>Gen AI Input and Output </figcaption> </figure>` | <figure>    <img src="/static/images/blogs/gen-ai.png" alt="Gen AI image" /> <figcaption>Gen AI Input and Output. </figcaption> </figure> 
 | Comments        | `\| This is a comment and will not be part of the `DOM` and hence it will be empty on the browser \|`         | |This is a comment and will not be part of the DOM  and hence it will be empty on the browser| | 
-| Color | This is red `#RRGGBB` in color                               | This is red `#RRGGBB` in color
-| Color - HTML way| `This is <span style="color:red">red</span> in color`                               | This is  in color
+| Color | This is red `#RRGGBB` in color                           | This is red `#0969DA` in color
+| Color - HTML way| `This is <span style="color:red">red</span> in color`               | This is <span style={{ color: 'red' }}>red</span> in color
 | Strikethrough | `It was a ~~mistake~~`                       | It was a ~~mistake~~
 | Horizontal rule | `---------------`                       | ---------------
 | Horizontal rule | `---------------`                       | ---------------
